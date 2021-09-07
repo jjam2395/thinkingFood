@@ -1,4 +1,7 @@
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs/internal/Observable';
+import { Recipe } from './recipe/interfaces/recipe.interface';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'thinkingFood';
+
 }
