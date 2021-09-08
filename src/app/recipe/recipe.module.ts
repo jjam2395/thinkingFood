@@ -14,6 +14,10 @@ import { DetailsComponent } from './pages/details/details.component';
     ByPlanComponent,
     DetailsComponent
   ],
+  exports: [
+    ByPlanComponent,
+    DetailsComponent
+  ],
   imports: [
     CommonModule
   ]

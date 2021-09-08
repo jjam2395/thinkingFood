@@ -1,1 +1,9 @@
-<p>by-plan works!</p>
+
+<h1>
+    Consulta tu plan Semanal
+</h1>
+
+<div class="row">
+  <app-recipe-card *ngFor="let item of recipes" [recipe]="item" class="col">
+  </app-recipe-card>
+</div>

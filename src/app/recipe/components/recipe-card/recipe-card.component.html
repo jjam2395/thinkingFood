@@ -1,1 +1,15 @@
-<p>recipe-card works!</p>
+<div class="card" style="width: 100%">
+    <img [src]="recipe.imgRoute" class="card-img-top" [alt]="'foto de '+recipe.name">
+    <div class="card-body">
+      <h5 class="card-title">{{recipe.name}}</h5>
+      <p class="card-text">{{recipe.description}}</p>
+      <div class="d-flex justify-content-start">
+          <div *ngFor="let item of recipe.labels" class="me-2">
+            <span class="badge bg-secondary">
+                {{item}}
+            </span>
+          </div>
+                </div>
+      <!-- <a href="#" class="btn btn-primary">Ver detalle</a> -->
+    </div>
+  </div>
