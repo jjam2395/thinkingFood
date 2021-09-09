@@ -5,6 +5,7 @@ import { HeadQuizComponent } from './components/head-quiz/head-quiz.component';
 import { BackQuizComponent } from './components/back-quiz/back-quiz.component';
 
 import { QuizComponent } from './pages/quiz/quiz.component';
+import { QuizOneComponent } from './components/quiz-one/quiz-one.component';
 
 
 
@@ -13,7 +14,8 @@ import { QuizComponent } from './pages/quiz/quiz.component';
   declarations: [
     HeadQuizComponent,
     QuizComponent,
-    BackQuizComponent
+    BackQuizComponent,
+    QuizOneComponent
   ],
   imports: [
     CommonModule

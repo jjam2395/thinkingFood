@@ -1,6 +1,28 @@
+:host {
+    display: block;
+    align-items: center;
+}
+h2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.content-quiz {
+    width: 280px;
+    height: 300px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #3DAC8C;
+}
 button {
     width: 91px;
     height: 29px;
+    border-radius: 4px;
+    border: none;
+    display: block;
+    margin: 0 auto;
     color: white;
     background-color: #3DAC8C;
 }
