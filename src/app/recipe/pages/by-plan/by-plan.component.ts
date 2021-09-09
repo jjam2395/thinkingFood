@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Recipe } from '../../interfaces/recipe.interface';
+import { RecipeService } from '../../services/recipe.service';
 
 @Component({
   selector: 'app-by-plan',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ByPlanComponent implements OnInit {
 
-  constructor() { }
+  constructor(private recipeServices:RecipeService) { }
+  recipes:Recipe[]=[];
 
   ngOnInit(): void {
+
+    this.recipes=this.recipeServices.getRecipes();
+    console.log(this.recipes);
+
   }
 
 }
