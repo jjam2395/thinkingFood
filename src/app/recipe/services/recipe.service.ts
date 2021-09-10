@@ -14,41 +14,135 @@ export class RecipeService {
   recipes: Recipe[]=[
     {
       id:           0,
-      name:         "Omelette con nopal y chorizo",
-      description:  "Prepara un platillo bien reportado con proteina", 
-      labels:       ["rápido", "balanceado", "otra label"],
+      name:         "Panqueque",
+      description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
+      labels:       ["Saludable", "Avena", "Frutas", "Fresas", "Aguaymanto", "Miel", "Bajo en calorias", "Arándanos", "Melón", "Papaya"],
       imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
-      cookingTime:  { value: 15, unit: 'minutos'},
-      difficult:    "fácil",
+      cookingTime:  { value: 30, unit: 'minutos'},
+      difficult:    "medio",
       macros:       {
-        calories: { value: 250, unit: 'Kcal'},
-        fats:     { value: 28, unit: 'g'},
-        proteins: { value: 28, unit: 'g'},
+        calories: { value: 610, unit: 'Kcal'},
+        fats:     { value: 13, unit: 'g'},
+        proteins: { value: 94, unit: 'g'},
+        carbs:    { value: 23, unit: 'g'},
+      },
+      portions:  1,
+      supplies:  [
+        {
+        quantity:  { value: 250, unit: 'gr.'},
+        supplie: "Avena",
+        },
+        {
+          quantity: { value: 1, unit: 'tarro'},
+          supplie: "Leche",
+        },
+        {
+          quantity: { value: 1, unit: 'unid.'},
+          supplie: "Huevo",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Stevia o endulcorante",
+        },
+        {
+          quantity: { value: 40, unit: 'gr.'},
+          supplie: "Mantequilla",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Esencia de vainilla",
+        },
+        {
+          quantity: { value: 1, unit: 'unid.'},
+          supplie: "Platano maduro",
+        },
+        {
+          quantity: { value: 4, unit: 'unid.'},
+          supplie: "Fresas",
+        },
+        {
+          quantity: { value: 8, unit: 'unid.'},
+          supplie: "Arándanos",
+        },
+        {
+          quantity: { value: 3, unit: 'unid.'},
+          supplie: "Aguaymanto",
+        }
+      ]
+      
+    },
+    
+    {
+      id:           1,
+      name:         "Hamburguesa",
+      description:  "de lenteja con ensalada de tomate, lechuga y pepino.", 
+      labels:       ["Saludable", "Lenteja", "Tomate", "Lechuga", "Bajo en calorías", "Vegetariano"],
+      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      cookingTime:  { value: 40, unit: 'minutos'},
+      difficult:    "medio",
+      macros:       {
+        calories: { value: 89, unit: 'Kcal'},
+        fats:     { value: 4, unit: 'g'},
+        proteins: { value: 14, unit: 'g'},
         carbs:    { value: 13, unit: 'g'},
       },
       portions:  1,
       supplies:  [
         {
-        quantity:  { value: 3, unit: 'pieza'},
-        supplie: "huevos",
+        quantity:  { value: 1, unit: 'tz.'},
+        supplie: "Lentejas sancochadas",
         },
         {
-          quantity: { value: 80, unit: 'gramo'},
-          supplie: "chorizo",
+          quantity: { value: 2, unit: 'unid.'},
+          supplie: "Huevos",
         },
         {
-          quantity: { value: 1, unit: 'pieza'},
-          supplie: "nopal",
+          quantity: { value: 0, unit: 'unid.'},
+          supplie: "Sal y pimienta",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Harina",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Maicena",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Perejil picado",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Ajo picado finamente",
+        },
+        {
+          quantity: { value: 2, unit: 'unid.'},
+          supplie: "Panes",
+        },
+        {
+          quantity: { value: 2, unit: 'unid.'},
+          supplie: "Tomate",
+        },
+        {
+          quantity: { value: 1, unit: 'unid.'},
+          supplie: "Lechuga",
+        },
+        {
+          quantity: { value: 1, unit: 'unid.'},
+          supplie: "Pepino",
         }
       ]
       
     },
+    
       {
         id:           1,
-        name:         "Alambre de res",
-        description:  "Bistec de res, chile morron, cebolla, un platillo tan nutritivo que se volverá tu favorito", 
-        labels:       ["sientete un chef", "balanceado", "label 3"],
+        name:         "Hamburguesa",
+        description:  "de lenteja con ensalada de tomate, lechuga y pepino.", 
+        labels:       ["Saludable", "Lenteja", "Tomate", "Lechuga", "Bajo en calorías", "Vegetariano"],
         imgRoute:     "assets/recipe/recipe-1/img/recipe-1-01.JPG"
+        
       },
       {
         id:           2,
