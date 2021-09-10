@@ -16,15 +16,20 @@ export class RecipeService {
       id:           0,
       name:         "Omelette con nopal y chorizo",
       description:  "Prepara un platillo bien reportado con proteina", 
-      labels:       ["rápido", "balanceado"],
-      imgRoute:     "assets/recipe/img/recipe-0.jpg"
+      labels:       ["rápido", "balanceado", "otra label"],
+      imgRoute:     "assets/recipe/img/recipe-0.jpg",
+      cookingTime:  "",
+      difficult: ""
+      
     },
     {
       id:           1,
       name:         "Alambre de res",
       description:  "Bistec de res, chile morron, cebolla, un platillo tan nutritivo que se volverá tu favorito", 
       labels:       ["sientete un chef", "balanceado"],
-      imgRoute:     "assets/recipe/img/recipe-1.JPG"
+      imgRoute:     "assets/recipe/img/recipe-1.JPG",
+      cookingTime:  "",
+      difficult: ""
       }
   ];
 
@@ -34,6 +39,7 @@ export class RecipeService {
     labels:         string[];
     cookingTime?:    string;
     difficult?:      string; 
+  
     */
 
   
