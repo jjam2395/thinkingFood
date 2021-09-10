@@ -67,7 +67,12 @@ export class RecipeService {
         {
           quantity: { value: 3, unit: 'unid.'},
           supplie: "Aguaymanto",
-        }
+        },
+        
+        preparation:       ["Vertir la avena en la agregar el resto de ingredientes, luego licuar. Sino también puedes colocarlo en un bowl y batir. ",
+                            "Luego cocinar en sartén de teflon.",
+                            "Servir con frutas y miel de abeja.",
+                            "Decorar con 4 fresas, arandanos, aguaymantos y miel de abeja."]
       ]
       
     },
@@ -131,7 +136,13 @@ export class RecipeService {
         {
           quantity: { value: 1, unit: 'unid.'},
           supplie: "Pepino",
-        }
+        },
+        
+        preparation:       ["Hacer aderezo.",
+                            "Agregar aderezo, harina, maicena, huevo, perejil y ajo.",
+                            "Dar forma y dorar por ambos lados.",
+                            "Servir sobre pan, con lechuga, tomate y pepino.",
+                            "Acompañar con salsas."]
       ]
       
     },
