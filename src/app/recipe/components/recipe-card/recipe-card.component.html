@@ -1,15 +1,50 @@
-<div class="card" style="width: 100%">
-    <img [src]="recipe.imgRoute" class="card-img-top" [alt]="'foto de '+recipe.name">
+<div  [routerLink]="[ '/recipe/', recipe.id ]"  class="card cursor-pointer" style="width: 100%">
+    <img [src]="recipe.imgRoute" class="card-img-top cursor-pointer" [alt]="'foto de '+recipe.name">
     <div class="card-body">
       <h5 class="card-title">{{recipe.name}}</h5>
       <p class="card-text">{{recipe.description}}</p>
-      <div class="d-flex justify-content-start">
-          <div *ngFor="let item of recipe.labels" class="me-2">
-            <span class="badge bg-secondary">
+      <section class="labels">
+            <span *ngFor="let item of recipe.labels" class="badge bg-secondary me-2">
                 {{item}}
             </span>
-          </div>
-                </div>
-      <!-- <a href="#" class="btn btn-primary">Ver detalle</a> -->
+      </section>
+      <section class="pt-2" *ngIf="extendedVersion">
+
+        <div *ngIf="recipe.cookingTime" >
+          <b>Tiempo de preparación:</b>
+          <p>{{recipe.cookingTime.value}}
+            <small>{{recipe.cookingTime.unit}}</small>
+          </p>
+        </div>
+
+        <div *ngIf="recipe.difficult" >
+          <b>Nivel de dificultad:</b>
+          <p>{{recipe.difficult}}</p>
+        </div>
+
+        <div *ngIf="recipe.macros" >
+          <b>Factores nutricionales</b>
+          <p>
+            <span>Calorias {{recipe.macros.calories.value}}
+            <small>{{recipe.macros.calories.unit}},</small>
+            </span>
+            <span>Grasas {{recipe.macros.fats.value}}
+              <small>{{recipe.macros.fats.unit}},</small>
+            </span>
+            <span>Proteina {{recipe.macros.proteins.value}}
+              <small>{{recipe.macros.proteins.unit}},</small>
+            </span>
+            <span>Carbohidratos {{recipe.macros.carbs.value}}
+              <small>{{recipe.macros.carbs.unit}},</small>
+            </span>
+          </p>
+        </div>
+
+
+          
+
+      </section>
+      
+     
     </div>
-  </div>
+</div>

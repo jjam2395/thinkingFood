@@ -3,7 +3,7 @@ export interface Recipe {
     name:           string;
     description:    string;
     labels:         string[];
-    cookingTime?:   number;
+    cookingTime?:   unitValue;
     difficult?:     string;
     imgRoute?:      string;
     macros?:        Macro;
@@ -12,15 +12,19 @@ export interface Recipe {
 
 }
 
+export interface unitValue {
+    unit:       string;
+    value:      number;
+}
+
 export interface Macro {
-    calories:   number;
-    fats:       number;
-    proteins :  number;
-    carbs:      number;      
+    calories:   unitValue;
+    fats:       unitValue;
+    proteins :  unitValue;
+    carbs:      unitValue;      
 }
 
 export interface Supplie{
-    quantity:   number;
+    quantity:  unitValue;
     supplie:    string;
-    unit?:       string;
 }

@@ -9,6 +9,7 @@ import { Recipe } from '../../interfaces/recipe.interface';
 export class RecipeCardComponent implements OnInit {
 
   @Input() recipe!:Recipe;
+  @Input() extendedVersion!:boolean;
 
   constructor() { }
 

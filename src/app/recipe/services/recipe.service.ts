@@ -17,31 +17,28 @@ export class RecipeService {
       name:         "Omelette con nopal y chorizo",
       description:  "Prepara un platillo bien reportado con proteina", 
       labels:       ["rápido", "balanceado", "otra label"],
-      imgRoute:     "assets/recipe/img/recipe-0.jpg",
-      cookingTime:  20,
+      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      cookingTime:  { value: 15, unit: 'minutos'},
       difficult:    "fácil",
       macros:       {
-        calories: 250,
-        fats:     28,
-        proteins: 28,
-        carbs:    13
+        calories: { value: 250, unit: 'Kcal'},
+        fats:     { value: 28, unit: 'g'},
+        proteins: { value: 28, unit: 'g'},
+        carbs:    { value: 13, unit: 'g'},
       },
       portions:  1,
       supplies:  [
         {
-        quantity: 3,
+        quantity:  { value: 3, unit: 'pieza'},
         supplie: "huevos",
-        unit: "pza"
         },
         {
-          quantity: 80,
+          quantity: { value: 80, unit: 'gramo'},
           supplie: "chorizo",
-          unit: "gramos"
         },
         {
-          quantity: 1,
+          quantity: { value: 1, unit: 'pieza'},
           supplie: "nopal",
-          unit: "pza"
         }
       ]
       
@@ -51,14 +48,14 @@ export class RecipeService {
         name:         "Alambre de res",
         description:  "Bistec de res, chile morron, cebolla, un platillo tan nutritivo que se volverá tu favorito", 
         labels:       ["sientete un chef", "balanceado", "label 3"],
-        imgRoute:     "assets/recipe/img/recipe-1.JPG"
+        imgRoute:     "assets/recipe/recipe-1/img/recipe-1-01.JPG"
       },
       {
         id:           2,
         name:         "Panqueque",
         description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
         labels:       ["saludable", "avena", "Frutas"],
-        imgRoute:     "assets/recipe/img/panqueque1.png"
+        imgRoute:     "assets/recipe/recipe-2/img/recipe-2-01.png"
       }
   ];
 
