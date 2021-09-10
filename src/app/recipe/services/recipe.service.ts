@@ -18,18 +18,47 @@ export class RecipeService {
       description:  "Prepara un platillo bien reportado con proteina", 
       labels:       ["rápido", "balanceado", "otra label"],
       imgRoute:     "assets/recipe/img/recipe-0.jpg",
-      cookingTime:  "",
-      difficult: ""
+      cookingTime:  20,
+      difficult:    "fácil",
+      macros:       {
+        calories: 250,
+        fats:     28,
+        proteins: 28,
+        carbs:    13
+      },
+      portions:  1,
+      supplies:  [
+        {
+        quantity: 3,
+        supplie: "huevos",
+        unit: "pza"
+        },
+        {
+          quantity: 80,
+          supplie: "chorizo",
+          unit: "gramos"
+        },
+        {
+          quantity: 1,
+          supplie: "nopal",
+          unit: "pza"
+        }
+      ]
       
     },
-    {
-      id:           1,
-      name:         "Alambre de res",
-      description:  "Bistec de res, chile morron, cebolla, un platillo tan nutritivo que se volverá tu favorito", 
-      labels:       ["sientete un chef", "balanceado"],
-      imgRoute:     "assets/recipe/img/recipe-1.JPG",
-      cookingTime:  "",
-      difficult: ""
+      {
+        id:           1,
+        name:         "Alambre de res",
+        description:  "Bistec de res, chile morron, cebolla, un platillo tan nutritivo que se volverá tu favorito", 
+        labels:       ["sientete un chef", "balanceado", "label 3"],
+        imgRoute:     "assets/recipe/img/recipe-1.JPG"
+      },
+      {
+        id:           2,
+        name:         "Panqueque",
+        description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
+        labels:       ["saludable", "avena", "Frutas"],
+        imgRoute:     "assets/recipe/img/panqueque1.png"
       }
   ];
 
