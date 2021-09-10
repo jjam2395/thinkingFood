@@ -9,7 +9,8 @@ export interface Recipe {
     macros?:        Macro;
     supplies?:      Supplie[];
     portions?:      number;        
-
+    typeMeal?:      string;
+    preparation?:   string[];
 }
 
 export interface unitValue {
