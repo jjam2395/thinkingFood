@@ -1,7 +1,9 @@
-<button mat-raised-button>
+<div class="container">
+    <input type="number" [(ngModel)]="value" [value]="value">
+</div>
+<button (click)="increment()"  class="increment">
     +
 </button>
-<input type="number">
-<button mat-raised-button>
+<button (click)="decrement()" class="decrement">
     -
 </button>

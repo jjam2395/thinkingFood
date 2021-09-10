@@ -12,4 +12,5 @@ export class QuizOneComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  title = '¿Cuantas personas comen en tu casa?';
 }

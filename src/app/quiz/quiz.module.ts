@@ -1,12 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 
 import { HeadQuizComponent } from './components/head-quiz/head-quiz.component';
 import { BackQuizComponent } from './components/back-quiz/back-quiz.component';
 
 import { QuizComponent } from './pages/quiz/quiz.component';
 import { QuizOneComponent } from './components/quiz-one/quiz-one.component';
-
+import { ButtonIncrementComponent } from './components/button-increment/button-increment.component'
 
 
 
@@ -15,10 +17,12 @@ import { QuizOneComponent } from './components/quiz-one/quiz-one.component';
     HeadQuizComponent,
     QuizComponent,
     BackQuizComponent,
-    QuizOneComponent
+    QuizOneComponent,
+    ButtonIncrementComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule   
   ],
   exports:[
     QuizComponent

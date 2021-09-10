@@ -12,4 +12,14 @@ export class ButtonIncrementComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  value = 0
+
+  increment() {
+    
+  }
+
+  decrement() {
+
+  }
+
 }
