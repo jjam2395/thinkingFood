@@ -10,7 +10,9 @@ export class RecipeService {
 
   
   private apiUrl: string = "https://firebase/recipes/rest/v2/";
-
+  // https://drive.google.com/file/d/1rYWto1TQGGgdGEe-ayPNQFypqyX8-Du3/view?usp=sharing
+  // https://drive.google.com/file/d/1J2JB6M6Bp2HT5TaUUNv2KEzjdAYGEPrS/view?usp=sharing
+  // https://drive.google.com/file/d/1J2JB6M6Bp2HT5TaUUNv2KEzjdAYGEPrS/view?usp=sharing
   recipes: Recipe[]=[
     {
       id:           0,
@@ -18,7 +20,7 @@ export class RecipeService {
       name:         "Panqueque",
       description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
       labels:       ["Saludable", "Avena", "Frutas", "Fresas", "Aguaymanto", "Miel", "Bajo en calorias", "Arándanos", "Melón", "Papaya"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=17aaeQqMVEOHVzXjdThFJYMvKJ_cmI7oB",
       cookingTime:  { value: 30, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -73,16 +75,16 @@ export class RecipeService {
       preparation:       ["Vertir la avena en la agregar el resto de ingredientes, luego licuar. Sino también puedes colocarlo en un bowl y batir. ",
                             "Luego cocinar en sartén de teflon.",
                             "Servir con frutas y miel de abeja.",
-                            "Decorar con 4 fresas, arandanos, aguaymantos y miel de abeja."]
-      
+                            "Decorar con 4 fresas, arandanos, aguaymantos y miel de abeja."],
+      videoRoute:'https://drive.google.com/file/d/1QqAMbqsSoQ7s_uU96jRfxVeRerLUb5ur/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1aRA0QRE6cCbSOcdjQV8BoQ6J4d1RbKV9/preview'
     },
-    
     {
       id:           1,
       name:         "Hamburguesa",
       description:  "de lenteja con ensalada de tomate, lechuga y pepino.", 
       labels:       ["Saludable", "Lenteja", "Tomate", "Lechuga", "Bajo en calorías", "Vegetariano"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1J2JB6M6Bp2HT5TaUUNv2KEzjdAYGEPrS",
       cookingTime:  { value: 40, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -145,22 +147,7 @@ export class RecipeService {
       "Acompañar con salsas."]
       
     },
-    
-      {
-        id:           1,
-        name:         "Hamburguesa",
-        description:  "de lenteja con ensalada de tomate, lechuga y pepino.", 
-        labels:       ["Saludable", "Lenteja", "Tomate", "Lechuga", "Bajo en calorías", "Vegetariano"],
-        imgRoute:     "assets/recipe/recipe-1/img/recipe-1-01.JPG"
-        
-      },
-      {
-        id:           2,
-        name:         "Panqueque",
-        description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
-        labels:       ["saludable", "avena", "Frutas"],
-        imgRoute:     "assets/recipe/recipe-2/img/recipe-2-01.png"
-      }
+
   ];
 
   /* 

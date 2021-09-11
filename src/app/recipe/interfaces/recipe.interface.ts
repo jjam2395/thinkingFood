@@ -9,8 +9,10 @@ export interface Recipe {
     macros?:        Macro;
     supplies?:      Supplie[];
     portions?:      number;        
-    typeMeal?:      string;
+    typemeal?:      string;
     preparation?:   string[];
+    flowchartRoute?:string;
+    videoRoute?:    string;
 }
 
 export interface unitValue {
