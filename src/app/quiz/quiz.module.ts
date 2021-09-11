@@ -11,7 +11,8 @@ import { QuizOneComponent } from './components/quiz-one/quiz-one.component';
 import { ButtonIncrementComponent } from './components/button-increment/button-increment.component';
 import { QuizTwoComponent } from './components/quiz-two/quiz-two.component';
 import { QuizThreeComponent } from './components/quiz-three/quiz-three.component';
-import { ButtonCheckComponent } from './components/button-check/button-check.component'
+import { ButtonCheckComponent } from './components/button-check/button-check.component';
+import { ButtonCardComponent } from './components/button-card/button-card.component'
 
 
 
@@ -24,7 +25,8 @@ import { ButtonCheckComponent } from './components/button-check/button-check.com
     ButtonIncrementComponent,
     QuizTwoComponent,
     QuizThreeComponent,
-    ButtonCheckComponent
+    ButtonCheckComponent,
+    ButtonCardComponent
   ],
   imports: [
     CommonModule,

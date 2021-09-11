@@ -12,4 +12,31 @@ export class QuizThreeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  buttons = [
+    {
+      title: 'Platano',
+      value: 'Platano'
+    },
+    {
+      title: 'Brocoli',
+      value: 'Brocoli'
+    },
+    {
+      title: 'Avena',
+      value: 'Avena'
+    },
+    {
+      title: 'Cebolla',
+      value: 'Cebolla'
+    }
+    ,
+    {
+      title: 'Manzana',
+      value: 'Manzana'
+    },
+    {
+      title: 'Ajo',
+      value: 'Ajo'
+    }
+  ]
 }
