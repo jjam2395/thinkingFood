@@ -14,6 +14,7 @@ export class RecipeService {
   recipes: Recipe[]=[
     {
       id:           0,
+      typemeal:     "Desayuno",
       name:         "Panqueque",
       description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
       labels:       ["Saludable", "Avena", "Frutas", "Fresas", "Aguaymanto", "Miel", "Bajo en calorias", "Arándanos", "Melón", "Papaya"],
