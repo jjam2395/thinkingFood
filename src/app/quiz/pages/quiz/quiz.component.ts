@@ -12,6 +12,31 @@ export class QuizComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  @Input() title !: string;
 
+  quizs = [
+    {
+      question: '¿Cuantas personas comen en casa?',
+      id: 1,
+      ruta: ''
+    },
+    {
+      question: '¿Alguna dieta preferida?',
+      id: 2,
+      ruta: ''
+    },
+    {
+      question: 'Insumos preferidos',
+      id: 3,
+      ruta: ''
+    }
+  ];
+
+  i = 0;
+  quiz = this.quizs[this.i];
+  
+
+  nextQuestion(){
+    this.i += 1;
+    this.quiz = this.quizs[this.i];
+  }
 }
