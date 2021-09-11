@@ -11,7 +11,7 @@ h2 {
 
 .content-quiz {
     width: 280px;
-    height: 200px;
+    height: auto;
     margin: 0 auto;
     display: block;
     border: 1px solid #3DAC8C;
@@ -23,7 +23,7 @@ button {
     border-radius: 4px;
     border: none;
     display: block;
-    margin: 0 auto;
+    margin: 10px auto;
     color: white;
     background-color: #3DAC8C;
 }

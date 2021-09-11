@@ -13,4 +13,5 @@ export class QuizOneComponent implements OnInit {
   }
 
   title = '¿Cuantas personas comen en tu casa?';
+  id = 1;
 }
