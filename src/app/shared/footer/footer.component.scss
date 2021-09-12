@@ -1,16 +1,25 @@
+
 footer{
     background-color: #22614F;
     color: var(--white-text);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
     flex-direction: column;
-}
-footer img{
-    margin: 20px;
+
+
+    .logo img{
+        height: 40vh;
+        margin-bottom:2rem;
+    }
+    .icons img{
+        height: 10vh;
+        margin-bottom:2rem;
+    }
 }
 
+
+/*
 @media(max-width:1020px){
 
     footer{
@@ -19,3 +28,4 @@ footer img{
    
 
 }
+*/
