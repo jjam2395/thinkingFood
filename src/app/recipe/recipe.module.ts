@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 
 
 
+
 @NgModule({
   declarations: [
     RecipeCardComponent,
@@ -25,6 +26,7 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     RecipeRoutingModule
   ]
 })
