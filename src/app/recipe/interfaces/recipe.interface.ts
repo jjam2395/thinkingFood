@@ -3,6 +3,7 @@ export interface Recipe {
     name:           string;
     description:    string;
     labels:         string[];
+    day?:            string;
     cookingTime?:   unitValue;
     difficult?:     string;
     imgRoute?:      string;

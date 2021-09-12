@@ -9,6 +9,7 @@ import { Recipe } from '../../interfaces/recipe.interface';
 export class RecipeCardComponent implements OnInit, AfterViewInit {
 
   @Input() recipe!:Recipe;
+  @Input() day!:string;
   @Input() extendedVersion!:boolean;
 
   constructor() { }

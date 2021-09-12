@@ -10,17 +10,15 @@ export class RecipeService {
 
   
   private apiUrl: string = "https://firebase/recipes/rest/v2/";
-  // https://drive.google.com/file/d/1rYWto1TQGGgdGEe-ayPNQFypqyX8-Du3/view?usp=sharing
-  // https://drive.google.com/file/d/1J2JB6M6Bp2HT5TaUUNv2KEzjdAYGEPrS/view?usp=sharing
-  // https://drive.google.com/file/d/1J2JB6M6Bp2HT5TaUUNv2KEzjdAYGEPrS/view?usp=sharing
   recipes: Recipe[]=[
     {
       id:           0,
+      day:          "martes",
       typemeal:     "Desayuno",
       name:         "Panqueque",
       description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
       labels:       ["Saludable", "Avena", "Frutas", "Fresas", "Aguaymanto", "Miel", "Bajo en calorias", "Arándanos", "Melón", "Papaya"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=17aaeQqMVEOHVzXjdThFJYMvKJ_cmI7oB",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1mZKvuJC0AxGuvU19FmU_niyXAuv9Dl7F",
       cookingTime:  { value: 30, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -81,10 +79,11 @@ export class RecipeService {
     },
     {
       id:           1,
+      day: 'lunes',
       name:         "Hamburguesa",
       description:  "de lenteja con ensalada de tomate, lechuga y pepino.", 
       labels:       ["Saludable", "Lenteja", "Tomate", "Lechuga", "Bajo en calorías", "Vegetariano"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1J2JB6M6Bp2HT5TaUUNv2KEzjdAYGEPrS",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1RQaQ6N6JwZslXTRlfwRxBq2iC6_a3Ono",
       cookingTime:  { value: 40, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -144,37 +143,27 @@ export class RecipeService {
       "Agregar aderezo, harina, maicena, huevo, perejil y ajo.",
       "Dar forma y dorar por ambos lados.",
       "Servir sobre pan, con lechuga, tomate y pepino.",
-      "Acompañar con salsas."]
-      
+      "Acompañar con salsas."],
+      videoRoute:'https://drive.google.com/file/d/1lhg1SeRv8xU_fEGk9KHTwEuL4jm7ol08/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1A0BkFz0sAj3ZyRxkRRkI5LbSwJQPJXRo/preview'
     },
-
   ];
-
-  /* 
-    name:           string;
-    description:    string;
-    labels:         string[];
-    cookingTime?:    string;
-    difficult?:      string; 
-  
-    */
-
   
   constructor(private http: HttpClient) { 
     
   }
 
-  getRecipes():Recipe[]{
-    let results=this.recipes;
+  getRecipes(): Recipe[]{
+    let results = this.recipes;
     return results;
   }
 
-  getRecipe(id:number):Recipe[]{
+  getRecipe(id:number): Recipe[]{
     let results= this.recipes.filter(item=> item.id==id);
     return results;
   }
 
-  getRecipesByName(name:string):Observable<Recipe[]>{
+  getRecipesByName(name:string): Observable<Recipe[]>{
     const url = `${ this.apiUrl}name/${name}`;
     return this.http.get<Recipe[]>(url)
   }
