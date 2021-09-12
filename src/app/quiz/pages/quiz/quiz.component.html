@@ -1,7 +1,7 @@
 <app-back-quiz></app-back-quiz>
-<app-head-quiz></app-head-quiz>
-<h2>{{quiz.question}}</h2>
-<div class="content-quiz">
-    <app-quiz-three></app-quiz-three>
+<app-head-quiz></app-head-quiz> 
+<h2>{{quizs[i].question}}</h2>
+<div class="container-fluid">
+    <router-outlet></router-outlet>
 </div>
-<button (click)="nextQuestion()" routerLink="">Siguiente</button>
+<button (click)="nextQuestion()" [routerLink]="quizs[i].ruta">Siguiente</button>

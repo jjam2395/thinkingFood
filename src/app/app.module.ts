@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RecipeModule } from './recipe/recipe.module';
 import { QuizModule } from './quiz/quiz.module';
+import { QuizRoutingModule } from './quiz/quiz-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { QuizModule } from './quiz/quiz.module';
     HttpClientModule,
     AppRoutingModule,
     RecipeModule,
-    QuizModule
+    QuizModule,
+    QuizRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { QuizRoutingModule } from './quiz-routing.module';
 
 import { HeadQuizComponent } from './components/head-quiz/head-quiz.component';
 import { BackQuizComponent } from './components/back-quiz/back-quiz.component';
@@ -30,10 +30,10 @@ import { ButtonCardComponent } from './components/button-card/button-card.compon
   ],
   imports: [
     CommonModule,
-    FormsModule   
+    FormsModule,
+    QuizRoutingModule
   ],
   exports:[
-    QuizComponent
   ]
  
 })

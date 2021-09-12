@@ -17,26 +17,23 @@ export class QuizComponent implements OnInit {
     {
       question: '¿Cuantas personas comen en casa?',
       id: 1,
-      ruta: ''
+      ruta: 'quiz-one'
     },
     {
       question: '¿Alguna dieta preferida?',
       id: 2,
-      ruta: ''
+      ruta: 'quiz-two'
     },
     {
       question: 'Insumos preferidos',
       id: 3,
-      ruta: ''
+      ruta: 'quiz-three'
     }
   ];
 
-  i = 0;
-  quiz = this.quizs[this.i];
-  
+  i = 1;
 
   nextQuestion(){
     this.i += 1;
-    this.quiz = this.quizs[this.i];
   }
 }
