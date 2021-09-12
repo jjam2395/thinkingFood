@@ -13,7 +13,7 @@ export class RecipeService {
   recipes: Recipe[]=[
     {
       id:           0,
-      day:          "martes",
+      day:          "lunes",
       typemeal:     "Desayuno",
       name:         "Panqueque",
       description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
@@ -74,8 +74,9 @@ export class RecipeService {
                             "Luego cocinar en sartén de teflon.",
                             "Servir con frutas y miel de abeja.",
                             "Decorar con 4 fresas, arandanos, aguaymantos y miel de abeja."],
-      videoRoute:'https://drive.google.com/file/d/1QqAMbqsSoQ7s_uU96jRfxVeRerLUb5ur/preview',
-      flowchartRoute: 'https://drive.google.com/file/d/1aRA0QRE6cCbSOcdjQV8BoQ6J4d1RbKV9/preview'
+      videoRoute:'https://drive.google.com/file/d/1iKTQVRQDiP1GlbTjGJMlDnNasDtLNbME/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1Ak_K0ZuhPMAlJ7OFoEjXlbQ_SPnkRIJT/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1UHuPhiZGqxKJnwQ4ya6takPsU8zg-JHi"
     },
     {
       id:           1,
@@ -84,7 +85,7 @@ export class RecipeService {
       name:         "Hamburguesa",
       description:  "de lenteja con ensalada de tomate, lechuga y pepino.", 
       labels:       ["Saludable", "Lenteja", "Tomate", "Lechuga", "Bajo en calorías", "Vegetariano"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1mZKvuJC0AxGuvU19FmU_niyXAuv9Dl7F",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1RQaQ6N6JwZslXTRlfwRxBq2iC6_a3Ono",
       cookingTime:  { value: 40, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -146,15 +147,17 @@ export class RecipeService {
       "Servir sobre pan, con lechuga, tomate y pepino.",
       "Acompañar con salsas."],
       videoRoute:'https://drive.google.com/file/d/1lhg1SeRv8xU_fEGk9KHTwEuL4jm7ol08/preview',
-      flowchartRoute: 'https://drive.google.com/file/d/1A0BkFz0sAj3ZyRxkRRkI5LbSwJQPJXRo/preview'
+      flowchartRoute: 'https://drive.google.com/file/d/1A0BkFz0sAj3ZyRxkRRkI5LbSwJQPJXRo/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1hno7YYdGN6RBqtxTO9nA0vrkbO_-yD3h"
     },
     {
       id:           2,
+      day:          "martes",
       typemeal:     "Desayuno",
       name:         "Omelette",
       description:  "de jamón, esparragos y queso.", 
       labels:       ["Saludable", "Huevo", "Jamón", "Espárragos", "Queso", "Cocina francesa"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1ExEJrgHkoyrVvouWHwIlzGI7L_j6gTIO",
       cookingTime:  { value: 10, unit: 'minutos'},
       difficult:    "intermedio",
       macros:       {
@@ -191,16 +194,20 @@ export class RecipeService {
       "Batir huevos con sal.",
       "Calentar mantequilla.",
       "Agregar huevos.",
-      "Cuajar moviendo con espátula y agregar relleno y dar forma."]
+      "Cuajar moviendo con espátula y agregar relleno y dar forma."],
+      videoRoute:'https://drive.google.com/file/d/1V_IwSlf7ul1489mdIVXMXIpkaGEBG3nf/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1gdX1BkzlxVsmOLYvo79Qcl6zJhQKYEGk/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=14vWkQkT0Ym5J5hehkgBxBXkUbe-GJ1FM"
       
     },   
      {
       id:           3,
+      day:          "martes",
       typemeal:     "Almuerzo",
       name:         "Ají de gallina",
       description:  "con arroz y huevo cocido.", 
       labels:       ["Criolla", "Pechuga de pollo", "Ají amarillo", "Arroz", "Huevo", "Leche evaporada"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=13EU7Lk-DJ27hXatElhOMwtgqjq-ttuLl",
       cookingTime:  { value: 70, unit: 'minutos'},
       difficult:    "intermedio",
       macros:       {
@@ -264,17 +271,21 @@ export class RecipeService {
       ["Cocinar el pollo en una olla para posteriormente, deshilachar.",
       "Hacer el aderezo: cebolla, ajos, ají amarillo (molido), ají mirasol (molido), ají panca (molido), fondo, pan remojado en leche (molido), la gallina deshilachada, queso desmenuzado.",
       "Cocinar y cuando este apunto agregar queso parmesano, pecanas.",
-      "Servir y disfrutar."]
+      "Servir y disfrutar."],
+      videoRoute:'https://drive.google.com/file/d/1pFs_i7fWMLlpwBUbmy2XIPc5mdMm0akz/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1aRA0QRE6cCbSOcdjQV8BoQ6J4d1RbKV9/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1Na2jVuQlHpwjppHplEkM4P7VNWXx6Bgv"
       
     },
     
      {
       id:           4,
+      day:          "miércoles",
       typemeal:     "Desayuno",
       name:         "Ensalada de frutas",
       description:  "papaya, melón, fresas, arándanos, aguaymando y aliño.", 
       labels:       ["Saludable", "Frutas", "Papaya", "Melón", "Arándanos", "Aguaymanto", "Bajo en calorias"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1bs-m7z0co_JX9BE6n24NUsl1t16C1GIj",
       cookingTime:  { value: 15, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -320,17 +331,21 @@ export class RecipeService {
       ],
       preparation:       
       ["Corta las frutas en trozos pequeños o en gajos.",
-      "Para el aliño: Mezclar el zumo de limón, ½ cdta. de stevia y 1 cdta.de esencia de vainilla."]
+      "Para el aliño: Mezclar el zumo de limón, ½ cdta. de stevia y 1 cdta.de esencia de vainilla."],
+      videoRoute:'https://drive.google.com/file/d/1N8pDadrAJPANGB17PbilYLo_JCrK-UUP/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1k6koP7azolmDziGNknqTCrCZruujlxp-/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1rjMzmABcWqp3l29bUpxROwwbTRtnMvyK"
       
     },
     
      {
       id:           5,
+      day:          "miércoles",
       typemeal:     "Almuerzo",
       name:         "Polla a la mostaza",
       description:  "con ensalada cocida (arveja, zanahoria, vainita,  betarraga).", 
       labels:       ["Saludable", "Pollo", "Mostaza", "Arveja", "Zanahoria", "Vainita", "Betarraga"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1_FdjmEKqw7wVD9DJPRF_XcT5W4WlHmlH",
       cookingTime:  { value: 45, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -377,17 +392,88 @@ export class RecipeService {
       preparation:       
       ["Sancochar verduras mezclar con la papa caliente y condimentar con el zumo de limón aceite de oliva , perejil , sal y pimienta.",
       "Marinar la pechuga de pavo con sal, pimienta, mostaza sellar en aceite de oliva agregar caldo tomillo y dejar cocinar.",
-      "Espesar con maicena y servir."]
+      "Espesar con maicena y servir."],
+      videoRoute:'https://drive.google.com/file/d/1u2iwm2jVGjysijvhRizEY-bklQOIIqIc/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1fjs_i3IIFXZdYbjTjLnbCkYgUK1maL7M/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1y0ViWyr0uJCIMJccIyLRxKfY939O6p8K"
       
+    },
+    {
+      id:           6,
+      day:          "jueves",
+      typemeal:     "Desayuno",
+      name:         "Panqueque",
+      description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
+      labels:       ["Saludable", "Avena", "Frutas", "Fresas", "Aguaymanto", "Miel", "Bajo en calorias", "Arándanos", "Melón", "Papaya"],
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1mZKvuJC0AxGuvU19FmU_niyXAuv9Dl7F",
+      cookingTime:  { value: 30, unit: 'minutos'},
+      difficult:    "medio",
+      macros:       {
+        calories: { value: 610, unit: 'Kcal'},
+        fats:     { value: 13, unit: 'g'},
+        proteins: { value: 94, unit: 'g'},
+        carbs:    { value: 23, unit: 'g'},
+      },
+      portions:  1,
+      supplies:  [
+        {
+        quantity:  { value: 250, unit: 'gr.'},
+        supplie: "Avena",
+        },
+        {
+          quantity: { value: 1, unit: 'tarro'},
+          supplie: "Leche",
+        },
+        {
+          quantity: { value: 1, unit: 'unid.'},
+          supplie: "Huevo",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Stevia o endulcorante",
+        },
+        {
+          quantity: { value: 40, unit: 'gr.'},
+          supplie: "Mantequilla",
+        },
+        {
+          quantity: { value: 1, unit: 'cdta.'},
+          supplie: "Esencia de vainilla",
+        },
+        {
+          quantity: { value: 1, unit: 'unid.'},
+          supplie: "Platano maduro",
+        },
+        {
+          quantity: { value: 4, unit: 'unid.'},
+          supplie: "Fresas",
+        },
+        {
+          quantity: { value: 8, unit: 'unid.'},
+          supplie: "Arándanos",
+        },
+        {
+          quantity: { value: 3, unit: 'unid.'},
+          supplie: "Aguaymanto",
+        }
+      ],
+      preparation:       ["Vertir la avena en la agregar el resto de ingredientes, luego licuar. Sino también puedes colocarlo en un bowl y batir. ",
+                            "Luego cocinar en sartén de teflon.",
+                            "Servir con frutas y miel de abeja.",
+                            "Decorar con 4 fresas, arandanos, aguaymantos y miel de abeja."],
+      videoRoute:'https://drive.google.com/file/d/1iKTQVRQDiP1GlbTjGJMlDnNasDtLNbME/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1Ak_K0ZuhPMAlJ7OFoEjXlbQ_SPnkRIJT/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1UHuPhiZGqxKJnwQ4ya6takPsU8zg-JHi"
     },
     
      {
-      id:           6,
+      id:           7,
+      day:          "jueves",
       typemeal:     "Almuerzo",
       name:         "Arroz con pollo",
       description:  "con ensalada criolla (cebolla, tomate y limón).", 
       labels:       ["Criolla", "Pollo", "Zanahoria", "Arveja", "Cebolla", "Tomate", "Limón"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1d4YCyl9_mQCv-OCPrDdt1pmhcdqKypCv",
       cookingTime:  { value: 60, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -465,17 +551,21 @@ export class RecipeService {
       "Incorporar el pollo y la cerveza.",
       "En el fondo dejar cocinar el pollo y luego retirarlo.",
       "Agregar el arroz y las verduras.",
-      "Servir y acompañar con una zarza de cebolla."]
+      "Servir y acompañar con una zarza de cebolla."],
+      videoRoute:'https://drive.google.com/file/d/1H_cCTocqXWDLcIRjqVf_J3Rfny6ZTspl/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1XjEW8Yy1tvi-VqRXVo1Nqx9LIHKilOnG/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1kqtETwIgTU2hMMU9ZwDY47Wh9fhUNJGb"
       
     }, 
     
      {
-      id:           7,
+      id:           8,
+      day:          "viernes",
       typemeal:     "Desayuno",
       name:         "Jugo de papaya",
       description:  "con miel de abeja.", 
       labels:       ["Saludable", "Papaya", "Miel", "Jugo"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1kuGKjJa7hJRLAkTzgKTXqfyUSpIABmdz",
       cookingTime:  { value: 10, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -505,17 +595,21 @@ export class RecipeService {
       "Cortar la papaya en trozos.",
       "Colocar los trozos y el agua en la licuadora.",
       "Añadir miel.",
-      "Licuar."]
+      "Licuar."],
+      videoRoute:'https://drive.google.com/file/d/1jz_m7rfpHyBgfnYPrjZOfDeaaapjZoVF/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1qqxv3LtNnVp5BHkcWqGf3jH-6LAPErOd/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1RbkCNR_g89b43nFrnOXRflPbhBBX_h-y"
       
     },
     
      {
-      id:           8,
+      id:           9,
+      day:          "viernes",
       typemeal:     "Almuerzo",
       name:         "Chaufa de quinoa",
       description:  "con pollo en trozos.", 
       labels:       ["Saludable", "Quinoa", "Pechuga de pollo", "Kión", "Aceite de ajonjolí", "Pimiento", "Holantao", "Huevo"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1fKxsywGUVNo5tt9MLPfhrA1_avmd9vso",
       cookingTime:  { value: 75, unit: 'minutos'},
       difficult:    "Intermedio",
       macros:       {
@@ -571,17 +665,21 @@ export class RecipeService {
       ["Cocinar quinua con sal y agua (1 tz. de quinua x 1 tz. de agua a fuego suave por 20 m) y enfriar.",
       "Saltear el pollo con sal pimienta y retirar de la sarten. ",
       "Agregar pimiento, holantao, parte blanca de la cebolla china, quinua, zumo de kion, tortilla y la parte verde cebolla china.",
-      "Servir y decorar con rulos cebolla china."]
+      "Servir y decorar con rulos cebolla china."],
+      videoRoute:'https://drive.google.com/file/d/1VFDyd3QWv87CXNmd0mUeAVN5F8DWoNmE/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1QZg4raktLVxwiSI4Q4YtnhLOj3rNzBsN/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=17lTHSTdPKB_pku155b7R8j21Nzu_DrvL"
       
     },
     
      {
-      id:           9,
+      id:           10,
+      day:          "sábado",
       typemeal:     "Desayuno",
       name:         "Puddin de chia",
       description:  "con mango.", 
       labels:       ["Saludable", "Chia", "Miel", "Mango"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1eNnCub5Ejlo7_7ii5CEpL2bZ4by71FDi",
       cookingTime:  { value: 6, unit: 'horas'},
       difficult:    "Baja",
       macros:       {
@@ -613,17 +711,20 @@ export class RecipeService {
       ["Disolver la leche vegetal con la misma cantidad de agua.",
       "Agregamos la chia.",
       "Agregar miel o edulcorante y dejar reposar por 6 horas.",
-      "Servir con fruta de eleccion en cubos o trozos."]
+      "Servir con fruta de eleccion en cubos o trozos."],
+      videoRoute:'https://drive.google.com/file/d/1pa79w3Fw3TdJXZ05zzQMzx4Hw8FgoP-1/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1ROlzgMNIHIDQGHsrerG3bIZXXdw6kXrI/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1WmCHnDHZkxJZgg7To_vv8p4KboGYCgrr"
       
     },
      {
-      id:           10,
-      day:'viernes',
+      id:           11,
+      day:          "sábado",
       typemeal:     "Almuerzo",
       name:         "Pachamanca",
       description:  "a la olla de carne de cerdo y pollo", 
       labels:       ["Regional", "Carne", "Pollo", "Cerdo", "Choclo", "Habas"],
-      imgRoute:     "assets/recipe/recipe-0/img/recipe-0-01.jpg",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1NBbsVV-Bkt1PAdlACxonZuT4EQcZUgGJ",
       cookingTime:  { value: 60, unit: 'minutos'},
       difficult:    "Intermedio",
       macros:       {
@@ -679,7 +780,10 @@ export class RecipeService {
       ["Cortar el pollo en trozos y colocar en un bowl grande junto con la carne de cerdo.",
       "Licuar las hierbas con la chicha de jora, ajos, ajíes, sal, pimienta comino para agregar sobre las carnes, dejar adobar de un día para otro.",
       "En una olla colocar los ingredientes.",
-      "Dejar cocina por 1 hora midiendo la temperatura de cocción , 10 minutos fuego alto , 25 minutos fuego medio , 15 minutos fuego bajo."]
+      "Dejar cocina por 1 hora midiendo la temperatura de cocción , 10 minutos fuego alto , 25 minutos fuego medio , 15 minutos fuego bajo."],
+      videoRoute:'https://drive.google.com/file/d/14wmUJl1KugJSFuFYYOidVnb-eDuIzY0h/preview',
+      flowchartRoute: 'https://drive.google.com/file/d/1Pa2yuVMA6FzROjHTzZHiyXq6oRmCvEvm/preview',
+      imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=1mB4qsNXbNBIZP5AEyv3NdCAE1jroTZz_"
       
     }
   ];
