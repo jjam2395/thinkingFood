@@ -280,7 +280,7 @@ export class RecipeService {
     
      {
       id:           4,
-      day:          "miércoles",
+      day:          "miercoles",
       typemeal:     "Desayuno",
       name:         "Ensalada de frutas",
       description:  "papaya, melón, fresas, arándanos, aguaymando y aliño.", 
@@ -340,7 +340,7 @@ export class RecipeService {
     
      {
       id:           5,
-      day:          "miércoles",
+      day:          "miercoles",
       typemeal:     "Almuerzo",
       name:         "Polla a la mostaza",
       description:  "con ensalada cocida (arveja, zanahoria, vainita,  betarraga).", 
@@ -674,7 +674,7 @@ export class RecipeService {
     
      {
       id:           10,
-      day:          "sábado",
+      day:          "sabado",
       typemeal:     "Desayuno",
       name:         "Puddin de chia",
       description:  "con mango.", 
@@ -719,7 +719,7 @@ export class RecipeService {
     },
      {
       id:           11,
-      day:          "sábado",
+      day:          "sabado",
       typemeal:     "Almuerzo",
       name:         "Pachamanca",
       description:  "a la olla de carne de cerdo y pollo", 
