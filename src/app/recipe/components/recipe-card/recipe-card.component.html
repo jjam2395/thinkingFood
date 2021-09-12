@@ -1,1 +1,82 @@
-<p>recipe-card works!</p>
+<div  [routerLink]="[ '/plan/receta/', recipe.id ]"  class="card cursor-pointer" style="width: 100%">
+    <img [src]="recipe.imgRoute" class="card-img-top cursor-pointer" [alt]="'foto de '+recipe.name">
+    <div class="card-body">
+      {{ recipe.typemeal | titlecase}}
+      <h5 class="card-title text-primary">{{recipe.name | titlecase }}</h5>
+      <p class="card-text">{{recipe.description}}</p>
+      <section class="labels">
+            <span *ngFor="let item of recipe.labels" class="badge bg-primary me-2">
+                {{item}}
+            </span>
+      </section>
+      <section class="pt-2" *ngIf="extendedVersion">
+
+        <div *ngIf="recipe.cookingTime" >
+          <b class="subtitle-text">Tiempo de preparación:</b>
+          <p>{{recipe.cookingTime.value}}
+            <small>{{recipe.cookingTime.unit}}</small>
+          </p>
+        </div>
+
+        <div *ngIf="recipe.difficult" >
+          <b class="subtitle-text">Nivel de dificultad:</b>
+          <p>{{recipe.difficult | titlecase}}</p>
+        </div>
+
+        <div *ngIf="recipe.macros" >
+          <b class="subtitle-text">Factores nutricionales</b>
+          <p>
+            <span>Calorias {{recipe.macros.calories.value}}
+            <small>{{recipe.macros.calories.unit}}, </small>
+            </span>
+            <span>Grasas {{recipe.macros.fats.value}}
+              <small>{{recipe.macros.fats.unit}}, </small>
+            </span>
+            <span>Proteina {{recipe.macros.proteins.value}}
+              <small>{{recipe.macros.proteins.unit}}, </small>
+            </span>
+            <span>Carbohidratos {{recipe.macros.carbs.value}}
+              <small>{{recipe.macros.carbs.unit}}</small>
+            </span>
+          </p>
+        </div>
+
+        <div class="pb-3" *ngIf="recipe.supplies">
+          <b class="subtitle-text">Lista de ingredientes</b>
+          <div class="row">
+            <div class="col-xs-6" *ngFor="let supplie of recipe.supplies" >
+              <small class="small-font"><i>{{supplie.quantity.value+" "+supplie.quantity.unit}} </i></small><span>{{supplie.supplie}}</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pb-3" *ngIf="recipe.supplies">
+          <b class="subtitle-text">Preparación</b>
+          <ol>
+            <li *ngFor="let instruction of recipe.preparation" >{{instruction}}</li>
+          </ol>
+        </div>
+
+        <div class="pb-3" *ngIf="recipe.videoRoute">
+          <b class="subtitle-text">¿Primera vez viendo esta receta?</b>
+          <div class="row mt-3">
+            <iframe class="col" #iframeVideo  
+            allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+           <!-- <iframe src="https://drive.google.com/file/d/1QqAMbqsSoQ7s_uU96jRfxVeRerLUb5ur/preview" width="640" height="480" allow="autoplay"></iframe> -->
+            
+          </div>
+
+        <div class="pb-3" *ngIf="recipe.flowchartRoute">
+          <b class="subtitle-text">¿No es la primera vez viendo esta receta?</b>
+          <div class="row mt-3">
+            <!-- 'https://drive.google.com/file/d/'+recipe.flowchartId+'/preview' -->
+            <iframe class="col" #iframeFlowchart allow="autoplay"></iframe>
+          </div>
+        </div>
+
+
+      </section>
+                
+    </div>
+</div>
