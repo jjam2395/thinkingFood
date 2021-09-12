@@ -25,6 +25,7 @@ import { HomeComponent } from './pages/home/home.component';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     RecipeRoutingModule
   ]
 })

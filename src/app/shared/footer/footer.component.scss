@@ -1,0 +1,21 @@
+footer{
+    background-color: #22614F;
+    color: var(--white-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    flex-direction: column;
+}
+footer img{
+    margin: 20px;
+}
+
+@media(max-width:1020px){
+
+    footer{
+        height: 55vh;
+    }
+   
+
+}

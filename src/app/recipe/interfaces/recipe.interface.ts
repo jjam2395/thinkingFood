@@ -7,6 +7,7 @@ export interface Recipe {
     cookingTime?:   unitValue;
     difficult?:     string;
     imgRoute?:      string;
+    imgRouteDetalle?:string;
     macros?:        Macro;
     supplies?:      Supplie[];
     portions?:      number;        
