@@ -9,6 +9,7 @@ import { Recipe } from '../../interfaces/recipe.interface';
 export class RecipeCardComponent implements OnInit, AfterViewInit {
 
   @Input() recipe!:Recipe;
+  @Input() day!:string;
   @Input() extendedVersion!:boolean;
 
   constructor() { }
@@ -21,8 +22,10 @@ export class RecipeCardComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.iframeVideo.nativeElement.setAttribute('src', this.recipe.videoRoute);
-    this.iframeFlowchart.nativeElement.setAttribute('src', this.recipe.flowchartRoute);
+    if (this.extendedVersion){
+      this.iframeVideo.nativeElement.setAttribute('src', this.recipe.videoRoute);
+      this.iframeFlowchart.nativeElement.setAttribute('src', this.recipe.flowchartRoute);
+    }
    }
 
 }

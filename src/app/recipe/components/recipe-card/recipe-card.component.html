@@ -1,6 +1,7 @@
-<div  [routerLink]="[ '/recipe/', recipe.id ]"  class="card cursor-pointer" style="width: 100%">
+<div  [routerLink]="[ '/plan/receta/', recipe.id ]"  class="card cursor-pointer" style="width: 100%">
     <img [src]="recipe.imgRoute" class="card-img-top cursor-pointer" [alt]="'foto de '+recipe.name">
     <div class="card-body">
+      {{ recipe.typemeal | titlecase}}
       <h5 class="card-title text-primary">{{recipe.name | titlecase }}</h5>
       <p class="card-text">{{recipe.description}}</p>
       <section class="labels">
@@ -66,7 +67,7 @@
             
           </div>
 
-        <div class="pb-3" *ngIf="recipe.supplies">
+        <div class="pb-3" *ngIf="recipe.flowchartRoute">
           <b class="subtitle-text">¿No es la primera vez viendo esta receta?</b>
           <div class="row mt-3">
             <!-- 'https://drive.google.com/file/d/'+recipe.flowchartId+'/preview' -->

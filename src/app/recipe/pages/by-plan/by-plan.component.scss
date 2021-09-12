@@ -1,0 +1,22 @@
+@import "../../../../styles.scss";
+
+.nav-link{
+    color:$primary
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: $primary;
+}
+
+.floating-tabs{
+    width: 25vw;
+    position: sticky; 
+    bottom: 0;
+    right: 0;
+    
+}
+
+.no-results{
+    min-height: 80vh;
+    min-width: 50vw;
+}
