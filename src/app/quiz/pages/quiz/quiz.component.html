@@ -8,5 +8,6 @@
     <button (click)="nextQuestion()" [routerLink]="quizs[i+1].ruta">Siguiente</button>
 </div>
 <div *ngIf="i===2">
-    <button routerLink="">Terminar</button>
+    <button [routerLink]="'/plan/'">Terminar</button>
 </div>
+
