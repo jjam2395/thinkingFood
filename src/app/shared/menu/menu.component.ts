@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Location} from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  path:string="";
+  constructor(private _location: Location, private router: Router) {
 
-  ngOnInit(): void {
+    router.events.subscribe((val) => {
+      this.path=this.router.url;
+    });
   }
-
+  
+  ngOnInit(): void {
+ 
+  }
+ 
+  backClicked() {
+    this._location.back();
+  }
 }

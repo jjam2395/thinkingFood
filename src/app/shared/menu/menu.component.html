@@ -7,6 +7,7 @@
         
 
         <ul class="menu-box">
+            <li><a *ngIf="path!='/'" (click)="backClicked()" class="fa fa-back"> Atras</a></li>
             <li><a routerLink="/" class="fa fa-home"> Home</a></li>
             <li><a routerLink="/quiz"  class="fa fa-calendar"> Plan Semanal</a></li>
             <!--
