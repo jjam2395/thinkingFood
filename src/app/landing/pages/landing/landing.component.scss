@@ -17,7 +17,7 @@
 }
 
 body{
-    font-family: Arial;
+    font-family: 'Raleway', sans-serif;
     background-color: #f0f9f6;
 }
 
@@ -30,13 +30,15 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 main h1{
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: #22614F;
     text-align: center;
     margin: 1.5rem;
+    font-weight: 100;
 }
 
 main p{
@@ -86,7 +88,7 @@ main form button{
 }
 
 main img{
-    height: 60vh;
+    height: 50vh;
 }
 
 .info {
@@ -165,7 +167,19 @@ footer img{
     
 
     main{
-        height: 220vh;
+    //    height: 220vh;
+    height: 100vh;
+        .subtitle{
+            display: none;
+        }
+
+        .copy-emojis{
+         //   display: none;
+        }
+
+        .extended{
+            display: none;
+        }
     }
 
     .info{
@@ -176,7 +190,7 @@ footer img{
         display: none;
     }
     main h1{
-        font-size: 4rem;
+        font-size: 3rem;
     }
     main p{
         font-size: 2rem;
@@ -219,6 +233,15 @@ footer img{
 	transform: translateY(-7px);
 }
 @media only screen and (max-width: 600px) {
+
+    .main h1{
+        font-size: 2rem;
+        color: #22614F;
+        text-align: center;
+        margin: 1.5rem;
+        font-weight: 100;
+    }
+
  	.btn-flotante {
 		font-size: 14px;
 		padding: 12px 20px;

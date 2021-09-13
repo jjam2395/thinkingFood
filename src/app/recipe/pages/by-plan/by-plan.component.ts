@@ -16,8 +16,6 @@ export class ByPlanComponent implements OnInit {
   ngOnInit(): void {
 
     this.recipes=this.recipeServices.getRecipes();
-    console.log(this.recipes);
-
   }
 
   getDayRecipes(day:string):Recipe[] {
