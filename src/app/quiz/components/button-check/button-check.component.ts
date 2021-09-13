@@ -13,4 +13,6 @@ export class ButtonCheckComponent implements OnInit {
   }
 
   @Input() title !: string;
+
+  @Input() select !: boolean;
 }

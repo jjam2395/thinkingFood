@@ -15,28 +15,34 @@ export class QuizThreeComponent implements OnInit {
   buttons = [
     {
       title: 'Platano',
-      value: 'Platano'
+      value: 'Platano',
+      select: false
     },
     {
       title: 'Brocoli',
-      value: 'Brocoli'
+      value: 'Brocoli',
+      select: false
     },
     {
       title: 'Avena',
-      value: 'Avena'
+      value: 'Avena',
+      select: false
     },
     {
       title: 'Cebolla',
-      value: 'Cebolla'
+      value: 'Cebolla',
+      select: false
     }
     ,
     {
       title: 'Manzana',
-      value: 'Manzana'
+      value: 'Manzana',
+      select: false
     },
     {
       title: 'Ajo',
-      value: 'Ajo'
+      value: 'Ajo',
+      select: false
     }
   ]
 }

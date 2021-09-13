@@ -13,4 +13,6 @@ export class ButtonCardComponent implements OnInit {
   }
 
   @Input() title !: string;
+
+  @Input() select !: boolean;
 }

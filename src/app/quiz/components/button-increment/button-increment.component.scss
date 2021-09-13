@@ -12,19 +12,19 @@
 
 .increment {
     width: 37px;
-    height: 33px;
+    height: 38px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
-    top: -35px;
+    top: -37px;
     left: -15px;
 }
 
 .decrement {
     width: 37px;
-    height: 33px;
+    height: 38px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    top: -35px;
+    top: -37px;
     left: 16px;
 }
 
@@ -43,4 +43,12 @@ button {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
+}
+
+.increment:hover {
+    background-color: #65C8AC;
+}
+
+.decrement:hover {
+    background-color: #65C8AC;
 }

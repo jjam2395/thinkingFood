@@ -10,6 +10,7 @@ export class QuizComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.i = 0;
   }
 
 
@@ -31,9 +32,10 @@ export class QuizComponent implements OnInit {
     }
   ];
 
-  i = 1;
+  i = 0;
 
   nextQuestion(){
     this.i += 1;
+    console.log(this.i);
   }
 }

@@ -17,19 +17,23 @@ export class QuizTwoComponent implements OnInit {
   buttons = [
     {
       title: 'Ninguna',
-      value: 'Ninguna'
+      value: 'Ninguna',
+      select: false,
     },
     {
       title: 'Vegetariana',
-      value: 'Vegetariana'
+      value: 'Vegetariana',
+      select: false,
     },
     {
       title: 'Baja en Carbs',
-      value: 'Baja en Carbs'
+      value: 'Baja en Carbs',
+      select: false,
     },
     {
       title: 'Vegana',
-      value: 'Vegana'
+      value: 'Vegana',
+      select: false,
     }
   ]
 }
