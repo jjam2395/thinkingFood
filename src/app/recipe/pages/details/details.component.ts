@@ -18,7 +18,6 @@ export class DetailsComponent implements OnInit {
   ngOnInit(): void {
 
     this.activatedRoute.params.subscribe( ({id}) =>{
-      console.log(id);
       this.recipe=this.findRecipeId(id)
     });
     
@@ -26,8 +25,7 @@ export class DetailsComponent implements OnInit {
 
   findRecipeId(id:number):Recipe{
     let result = this.recipeService.getRecipe(id);
-    if (result.length>0)
-      console.log(result);
+
     return result[0];
   }
 }

@@ -11,6 +11,7 @@ $secondary:   #FDCB00;
 $success:     #65C8AC;
 $info:        #32465A;
 $warning:     #FD9800;
+$font-family: 'Raleway', sans-serif;
 
 
 // 3. Include remainder of required Bootstrap stylesheets
@@ -36,3 +37,7 @@ $warning:     #FD9800;
     border-radius: .5rem;
 }
 
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
