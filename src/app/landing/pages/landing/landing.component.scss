@@ -34,10 +34,11 @@ main{
 }
 
 main h1{
-    font-size: 4.5rem;
+    font-size: 4.2rem;
     color: #22614F;
     text-align: center;
     margin: 1.5rem;
+    margin-top: 7rem;
     font-weight: 100;
 }
 
@@ -92,17 +93,16 @@ main img{
 }
 
 .info {
-    padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.info{
     background-color: white;
     text-align: center;
+    padding: 10rem 20rem 10rem 20rem;
 }
+
+
 
 .info__cont h2{
     color: #3DAC8C;
@@ -119,6 +119,7 @@ main img{
 }
 
 
+
 .instructions {
     padding-top: 1rem;
     display: flex;
@@ -127,6 +128,7 @@ main img{
     flex-direction: column;
     text-align: center;
     color: #3DAC8C;
+    padding: 10rem 20rem 10rem 20rem;
 }
 
 .instructions__cont{
@@ -161,10 +163,7 @@ footer img{
     width: 120px;
 }
 
-@media(max-width:1020px){
-
-
-    
+@media(max-width:1028px){
 
     main{
     //    height: 220vh;
@@ -184,8 +183,18 @@ footer img{
 
     .info{
         text-align: center;
-        height: 240vh;
+        padding: 10rem;
+    
+     //   height: 240vh;
     }
+
+    .instructions{
+        padding: 10rem;
+        text-align: center;
+        //padding: 5rem 2rem 5rem 2rem;
+        
+    }
+
     .image{
         display: none;
     }
@@ -234,6 +243,20 @@ footer img{
 }
 @media only screen and (max-width: 600px) {
 
+
+    .info{
+        text-align: center;
+        padding: 10rem 2rem 10rem 2rem;
+     //   padding: 5rem 2rem 5rem 2rem;
+     //   height: 240vh;
+    }
+
+    .instructions{
+        padding: 10rem 2rem 10rem 2rem;
+        text-align: center;
+        //padding: 5rem 2rem 5rem 2rem;
+        
+    }
     .main h1{
         font-size: 2rem;
         color: #22614F;

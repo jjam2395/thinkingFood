@@ -21,8 +21,18 @@ footer{
 
 @media(min-width:320px){
 
-    footer img {
-        height: 20vh;
+    footer {
+        padding-top: 3rem;
+
+        img {
+            height: 15vh;
+        }
+
+        .icons img{
+            height: 5vh;
+            margin-bottom:8rem;
+        }
     }
    
+    
 }
