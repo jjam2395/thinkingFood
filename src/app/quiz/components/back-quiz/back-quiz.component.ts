@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-back-quiz',
@@ -12,4 +12,17 @@ export class BackQuizComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() idPregunta !: number;
+
+  rutas = [
+    {
+      pregunta: 'quiz-one'
+    },
+    {
+      pregunta: 'quiz-two'
+    },
+    {
+      pregunta: 'quiz-three'
+    },
+  ]
 }

@@ -6,7 +6,9 @@
     </div>
     <div class="container-bar">
         <div class="progresBar">
-            <div class="progress"></div>
+            <div *ngIf="idPregunta === 1" class="progress"></div>
+            <div *ngIf="idPregunta === 2" class="progress2"></div>
+            <div *ngIf="idPregunta === 3" class="progress3"></div>
         </div>
         <p>{{idPregunta}} de 3</p>
     </div>

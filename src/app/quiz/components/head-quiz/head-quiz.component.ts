@@ -13,4 +13,5 @@ export class HeadQuizComponent implements OnInit {
   }
 
   @Input() idPregunta : number = 1;  
+
 }

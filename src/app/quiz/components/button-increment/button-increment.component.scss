@@ -1,5 +1,6 @@
 .container{
     width: 99px;
+    min-width: 120px;
     height: 37px;
     border-radius: 15px;
     border: solid 1px black;
@@ -13,6 +14,7 @@
 .increment {
     width: 37px;
     height: 38px;
+    min-width: 45px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     top: -37px;
@@ -22,6 +24,7 @@
 .decrement {
     width: 37px;
     height: 38px;
+    min-width: 45px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
     top: -37px;
@@ -30,6 +33,7 @@
 
 input {
     width: 33px;
+    min-width: 45px;
     height: 35px;
     font-size: 24px;
     font-weight: 500;
@@ -51,4 +55,15 @@ button {
 
 .decrement:hover {
     background-color: #65C8AC;
+}
+
+@media(min-width:650px) {
+
+    .increment {
+        left: -19px;
+    }
+    
+    .decrement {
+        left: 19px;
+    }
 }

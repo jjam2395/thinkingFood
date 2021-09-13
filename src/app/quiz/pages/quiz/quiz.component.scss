@@ -11,10 +11,11 @@ h2 {
 
 .container-fluid {
     width: 280px;
+    min-width: 400px;
     height: auto;
     margin: 0 auto;
     display: block;
-    border: 1px solid #3DAC8C;
+    /* border: 1px solid #3DAC8C; */
 
 }
 button {
@@ -26,4 +27,15 @@ button {
     margin: 10px auto;
     color: white;
     background-color: #3DAC8C;
+}
+
+@media(min-width:650px) {
+
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 150px;
+    }
 }

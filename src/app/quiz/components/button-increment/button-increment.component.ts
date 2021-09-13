@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-button-increment',
@@ -12,14 +12,17 @@ export class ButtonIncrementComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Output() respuesta: EventEmitter<number>= new EventEmitter();
   value = 0
 
   increment() {
     this.value++;
+    this.respuesta.emit(this.value);
   }
 
   decrement() {
     this.value--;
+    this.respuesta.emit(this.value);
   }
 
 }
