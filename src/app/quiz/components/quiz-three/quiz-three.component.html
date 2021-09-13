@@ -1,0 +1,7 @@
+<div class="container">
+    <app-button-card 
+    *ngFor="let buton of buttons" 
+    [title]="buton.title"
+    (click)="buton.select = !buton.select"
+    [select]="buton.select" ></app-button-card>
+</div>

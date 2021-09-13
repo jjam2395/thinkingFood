@@ -1,0 +1,69 @@
+.container{
+    width: 99px;
+    min-width: 120px;
+    height: 37px;
+    border-radius: 15px;
+    border: solid 1px black;
+    background-color: #B4B4B4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.increment {
+    width: 37px;
+    height: 38px;
+    min-width: 45px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    top: -37px;
+    left: -15px;
+}
+
+.decrement {
+    width: 37px;
+    height: 38px;
+    min-width: 45px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    top: -37px;
+    left: 16px;
+}
+
+input {
+    width: 33px;
+    min-width: 45px;
+    height: 35px;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.increment:hover {
+    background-color: #65C8AC;
+}
+
+.decrement:hover {
+    background-color: #65C8AC;
+}
+
+@media(min-width:650px) {
+
+    .increment {
+        left: -19px;
+    }
+    
+    .decrement {
+        left: 19px;
+    }
+}

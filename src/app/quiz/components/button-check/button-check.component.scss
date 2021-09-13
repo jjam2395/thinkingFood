@@ -1,0 +1,49 @@
+.content{
+    width: 180px;
+    min-width: 250px;
+    height: 50px;
+    min-height: 60px;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #c4c4c4;
+    border-radius: 10px;
+}
+
+.input-container {
+    width: 25px;
+    height: 25px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+input[type=checkbox] {
+    width: 25px;
+    height: 25px;
+    /* display: none; */
+    appearance: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+input:checked {
+    background-color: #3DAC8C;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin: auto 0;
+}
+
+@media(min-width:650px) {
+    p {
+        font-size: 22px;
+    }
+}

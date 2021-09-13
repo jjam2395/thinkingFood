@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from "@angular/common/http";
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RecipeModule } from './recipe/recipe.module';
+import { QuizModule } from './quiz/quiz.module';
+import { QuizRoutingModule } from './quiz/quiz-routing.module';
 import { SharedModule } from './shared/shared.module';
 import { LandingModule } from './landing/landing.module';
 import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
-/*
-import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
-*/
 
 @NgModule({
   declarations: [
@@ -22,6 +20,8 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
     HttpClientModule,
     AppRoutingModule,
     RecipeModule,
+    QuizModule,
+    QuizRoutingModule,
     SharedModule,
     LandingModule,
     provideFirebaseApp(() => initializeApp({
@@ -35,10 +35,6 @@ import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
       measurementId: "G-9VP01NDSXJ"
     })),
     provideAnalytics(() => getAnalytics()),
-    /*
-    AngularFireAnalyticsModule
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAnalyticsModule*/
   ],
   providers: [],
   bootstrap: [AppComponent]
