@@ -1,6 +1,6 @@
 <div class="container">
-  <header>
-    <h1 class="text-primary">
+  <header class="pt-5">
+    <h1 class="text-primary pt-3">
       Conoce nuestro plan semanal
     </h1>
 
@@ -40,41 +40,53 @@
     <div class="tab-content" id="v-pills-tabContent">
       <div class="tab-pane fade show active" id="v-pills-monday" role="tabpanel" aria-labelledby="v-pills-monday-tab">
   
-      <ng-container *ngIf="(getDayRecipes('lunes')).length>0; else noResults"  class="row">
-          <app-recipe-card *ngFor="let item of getDayRecipes('lunes')" [recipe]="item" class="col mt-3">
+      <ng-container *ngIf="(getDayRecipes('lunes')).length>0; else noResults">
+        <div class="row">
+          <app-recipe-card *ngFor="let item of getDayRecipes('lunes')" [recipe]="item" class="col my-2">
           </app-recipe-card>
+          </div>
         </ng-container>
       </div>
     <div class="tab-pane fade" id="v-pills-tuesday" role="tabpanel" aria-labelledby="v-pills-tuesday-tab">
-    <ng-container *ngIf="(getDayRecipes('martes')).length>0; else noResults"  class="row">
-        <app-recipe-card *ngFor="let item of getDayRecipes('martes')" [recipe]="item" class="col mt-3">
+    <ng-container *ngIf="(getDayRecipes('martes')).length>0; else noResults">
+      <div class="row">
+        <app-recipe-card *ngFor="let item of getDayRecipes('martes')" [recipe]="item" class="col my-2">
         </app-recipe-card>
+        </div>
       </ng-container>
     </div>
     <div class="tab-pane fade" id="v-pills-wednesday" role="tabpanel" aria-labelledby="v-pills-wednesday-tab">
-    <ng-container *ngIf="(getDayRecipes('miercoles')).length>0; else noResults"  class="row">
-        <app-recipe-card *ngFor="let item of getDayRecipes('miercoles')" [recipe]="item" class="col mt-3">
+    <ng-container *ngIf="(getDayRecipes('miercoles')).length>0; else noResults">
+      <div class="row">
+        <app-recipe-card *ngFor="let item of getDayRecipes('miercoles')" [recipe]="item" class="col my-2">
         </app-recipe-card>
+        </div>
       </ng-container>
     </div>
     <div class="tab-pane fade" id="v-pills-thursday" role="tabpanel" aria-labelledby="v-pills-thursday-tab">
-    <ng-container *ngIf="(getDayRecipes('jueves')).length>0; else noResults"  class="row">
-        <app-recipe-card *ngFor="let item of getDayRecipes('jueves')" [recipe]="item" class="col mt-3">
+    <ng-container *ngIf="(getDayRecipes('jueves')).length>0; else noResults">
+      <div class="row">
+        <app-recipe-card *ngFor="let item of getDayRecipes('jueves')" [recipe]="item" class="col my-2">
         </app-recipe-card>
+        </div>
       </ng-container>
     </div>
     <div class="tab-pane fade" id="v-pills-friday" role="tabpanel" aria-labelledby="v-pills-friday-tab">
-    <ng-container *ngIf="(getDayRecipes('viernes')).length>0; else noResults"  class="row">
-        <app-recipe-card *ngFor="let item of getDayRecipes('viernes')" [recipe]="item" class="col mt-3">
+    <ng-container *ngIf="(getDayRecipes('viernes')).length>0; else noResults">
+      <div class="row">
+        <app-recipe-card *ngFor="let item of getDayRecipes('viernes')" [recipe]="item" class="col my-2">
         </app-recipe-card>
+        </div>
       </ng-container>
     </div>
 
     <div class="tab-pane fade" id="v-pills-saturday" role="tabpanel" aria-labelledby="v-pills-saturday-tab">
-      <ng-container *ngIf="(getDayRecipes('sabado')).length>0; else noResults"  class="row">
-        <app-recipe-card *ngFor="let item of getDayRecipes('sabado')" [recipe]="item" class="col mt-3">
+      <ng-container *ngIf="(getDayRecipes('sabado')).length>0; else noResults">
+        <div class="row">
+        <app-recipe-card *ngFor="let item of getDayRecipes('sabado')" [recipe]="item" class="col my-2">
         </app-recipe-card>
-      </ng-container>
+ 
+ </div>     </ng-container>
     </div>
   </div>
       <!-- vertical tabs -->
