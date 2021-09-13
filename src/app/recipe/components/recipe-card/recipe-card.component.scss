@@ -1,3 +1,65 @@
+@import "../../../../styles.scss";
+
 .cursor-pointer{
     cursor:pointer;
 }
+
+.subtitle-text{
+    font-weight: bold;
+    color:$info;
+}
+
+.small-font{
+    font-size:x-small;
+}
+
+iframe{
+    height: auto;
+}
+
+
+/*
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+*/
+.card-img-top{
+    max-width: 100%;
+    max-height: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+//@include media-breakpoint-up(sm) { ... }
+@include media-breakpoint-up(md) { 
+    iframe{
+        height: 480px;
+    }
+ }
+@include media-breakpoint-up(lg) { 
+
+    .card-img-top{
+        height: 50vh;
+        width: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    iframe{
+        height: 720px;
+    }
+
+    .subtitle-text{
+        font-weight: bold;
+        color:$info;
+        font-size: 1.25rem;
+    }
+
+    .card-title{
+        font-size:x-large;
+    }
+ }
+@include media-breakpoint-up(xl) { 
+    iframe{
+    height: 860px;
+} }
+@include media-breakpoint-up(xxl) {  }

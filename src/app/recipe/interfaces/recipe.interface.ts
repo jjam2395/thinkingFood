@@ -3,14 +3,18 @@ export interface Recipe {
     name:           string;
     description:    string;
     labels:         string[];
+    day?:            string;
     cookingTime?:   unitValue;
     difficult?:     string;
     imgRoute?:      string;
+    imgRouteDetalle?:string;
     macros?:        Macro;
     supplies?:      Supplie[];
     portions?:      number;        
-    typeMeal?:      string;
+    typemeal?:      string;
     preparation?:   string[];
+    flowchartRoute?:string;
+    videoRoute?:    string;
 }
 
 export interface unitValue {

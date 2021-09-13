@@ -5,6 +5,8 @@ import { RecipeCardComponent } from './components/recipe-card/recipe-card.compon
 import { LabelsComponent } from './components/labels/labels.component';
 import { ByPlanComponent } from './pages/by-plan/by-plan.component';
 import { DetailsComponent } from './pages/details/details.component';
+import { RecipeRoutingModule } from './recipe-routing.module';
+import { HomeComponent } from './pages/home/home.component';
 
 
 
@@ -14,7 +16,8 @@ import { DetailsComponent } from './pages/details/details.component';
     RecipeCardComponent,
     LabelsComponent,
     ByPlanComponent,
-    DetailsComponent
+    DetailsComponent,
+    HomeComponent
   ],
   exports: [
     ByPlanComponent,
@@ -22,7 +25,8 @@ import { DetailsComponent } from './pages/details/details.component';
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    RecipeRoutingModule
   ]
 })
 export class RecipeModule { }

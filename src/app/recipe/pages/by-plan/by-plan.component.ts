@@ -9,14 +9,18 @@ import { RecipeService } from '../../services/recipe.service';
 })
 export class ByPlanComponent implements OnInit {
 
+ 
   constructor(private recipeServices:RecipeService) { }
   recipes:Recipe[]=[];
 
   ngOnInit(): void {
 
     this.recipes=this.recipeServices.getRecipes();
-    console.log(this.recipes);
-
   }
 
+  getDayRecipes(day:string):Recipe[] {
+    let recipes:any = this.recipes.filter(recipe => recipe.day==day);
+    return recipes;
+    }
+  
 }

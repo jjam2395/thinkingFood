@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "thinkingfood-platzi"
+  },
+  "targets": {
+    "thinkingfood-platzi": {
+      "hosting": {
+        "thinkingFood": [
+          "thinkingfood-platzi"
+        ]
+      }
+    }
+  }
+}
