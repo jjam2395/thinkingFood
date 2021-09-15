@@ -18,7 +18,7 @@ export class RecipeService {
       name:         "Panqueque",
       description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
       labels:       ["Saludable", "Avena", "Frutas", "Fresas", "Aguaymanto", "Miel", "Bajo en calorias", "Arándanos", "Melón", "Papaya"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1mZKvuJC0AxGuvU19FmU_niyXAuv9Dl7F",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1ExMfLfXTOh-z2NSjoLeDFxvTe9Q1aBXz",
       cookingTime:  { value: 30, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -85,7 +85,7 @@ export class RecipeService {
       name:         "Hamburguesa",
       description:  "de lenteja con ensalada de tomate, lechuga y pepino.", 
       labels:       ["Saludable", "Lenteja", "Tomate", "Lechuga", "Bajo en calorías", "Vegetariano"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1RQaQ6N6JwZslXTRlfwRxBq2iC6_a3Ono",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1_gKf8bEMlAziSVIz9-G3qd6muo4ytqPw",
       cookingTime:  { value: 40, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -157,7 +157,7 @@ export class RecipeService {
       name:         "Omelette",
       description:  "de jamón, esparragos y queso.", 
       labels:       ["Saludable", "Huevo", "Jamón", "Espárragos", "Queso", "Cocina francesa"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1ExEJrgHkoyrVvouWHwIlzGI7L_j6gTIO",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1oQY1QnQFWLejjQmw_5oi9QDkUUBfVWlc",
       cookingTime:  { value: 10, unit: 'minutos'},
       difficult:    "intermedio",
       macros:       {
@@ -207,7 +207,7 @@ export class RecipeService {
       name:         "Ají de gallina",
       description:  "con arroz y huevo cocido.", 
       labels:       ["Criolla", "Pechuga de pollo", "Ají amarillo", "Arroz", "Huevo", "Leche evaporada"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=13EU7Lk-DJ27hXatElhOMwtgqjq-ttuLl",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1ZVatBqZ_pmCK6JN_9D_oaqQh8hrnU9mB",
       cookingTime:  { value: 70, unit: 'minutos'},
       difficult:    "intermedio",
       macros:       {
@@ -285,7 +285,7 @@ export class RecipeService {
       name:         "Ensalada de frutas",
       description:  "papaya, melón, fresas, arándanos, aguaymando y aliño.", 
       labels:       ["Saludable", "Frutas", "Papaya", "Melón", "Arándanos", "Aguaymanto", "Bajo en calorias"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1bs-m7z0co_JX9BE6n24NUsl1t16C1GIj",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1lxfzO0S44hUIJQOp16gYyAeF5kuoWlS9",
       cookingTime:  { value: 15, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -345,7 +345,7 @@ export class RecipeService {
       name:         "Polla a la mostaza",
       description:  "con ensalada cocida (arveja, zanahoria, vainita,  betarraga).", 
       labels:       ["Saludable", "Pollo", "Mostaza", "Arveja", "Zanahoria", "Vainita", "Betarraga"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1_FdjmEKqw7wVD9DJPRF_XcT5W4WlHmlH",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1kZXCedrB7nEPoOPVI8giyNfC_dEPUamR",
       cookingTime:  { value: 45, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -405,7 +405,7 @@ export class RecipeService {
       name:         "Panqueque",
       description:  "de avena y platanos con frutas (fresa, aguaymanto, arandanos, melón papaya).", 
       labels:       ["Saludable", "Avena", "Frutas", "Fresas", "Aguaymanto", "Miel", "Bajo en calorias", "Arándanos", "Melón", "Papaya"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1mZKvuJC0AxGuvU19FmU_niyXAuv9Dl7F",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1ExMfLfXTOh-z2NSjoLeDFxvTe9Q1aBXz",
       cookingTime:  { value: 30, unit: 'minutos'},
       difficult:    "medio",
       macros:       {
@@ -473,7 +473,7 @@ export class RecipeService {
       name:         "Arroz con pollo",
       description:  "con ensalada criolla (cebolla, tomate y limón).", 
       labels:       ["Criolla", "Pollo", "Zanahoria", "Arveja", "Cebolla", "Tomate", "Limón"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1d4YCyl9_mQCv-OCPrDdt1pmhcdqKypCv",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1yDOkqBcZEMRTplXacGDFDSkzyhs8W9Y4",
       cookingTime:  { value: 60, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -565,7 +565,7 @@ export class RecipeService {
       name:         "Jugo de papaya",
       description:  "con miel de abeja.", 
       labels:       ["Saludable", "Papaya", "Miel", "Jugo"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1kuGKjJa7hJRLAkTzgKTXqfyUSpIABmdz",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=182Rx-wKcgNX7rKsxkN0FnhyCllPakG5e",
       cookingTime:  { value: 10, unit: 'minutos'},
       difficult:    "Baja",
       macros:       {
@@ -609,7 +609,7 @@ export class RecipeService {
       name:         "Chaufa de quinoa",
       description:  "con pollo en trozos.", 
       labels:       ["Saludable", "Quinoa", "Pechuga de pollo", "Kión", "Aceite de ajonjolí", "Pimiento", "Holantao", "Huevo"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1fKxsywGUVNo5tt9MLPfhrA1_avmd9vso",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1qAovTd0CJqYL9JBTiLKHjViI8wHKZ72F",
       cookingTime:  { value: 75, unit: 'minutos'},
       difficult:    "Intermedio",
       macros:       {
@@ -671,7 +671,6 @@ export class RecipeService {
       imgRouteDetalle:     "https://drive.google.com/uc?export=view&id=17lTHSTdPKB_pku155b7R8j21Nzu_DrvL"
       
     },
-    
      {
       id:           10,
       day:          "sabado",
@@ -679,7 +678,7 @@ export class RecipeService {
       name:         "Puddin de chia",
       description:  "con mango.", 
       labels:       ["Saludable", "Chia", "Miel", "Mango"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1eNnCub5Ejlo7_7ii5CEpL2bZ4by71FDi",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=105q-21FXAinyd_gNnzoh6U7lGwU0srzf",
       cookingTime:  { value: 6, unit: 'horas'},
       difficult:    "Baja",
       macros:       {
@@ -722,9 +721,9 @@ export class RecipeService {
       day:          "sabado",
       typemeal:     "Almuerzo",
       name:         "Pachamanca",
-      description:  "a la olla de carne de cerdo y pollo", 
+      description:  "a la olla de carne de cerdo y pollo",
       labels:       ["Regional", "Carne", "Pollo", "Cerdo", "Choclo", "Habas"],
-      imgRoute:     "https://drive.google.com/uc?export=view&id=1NBbsVV-Bkt1PAdlACxonZuT4EQcZUgGJ",
+      imgRoute:     "https://drive.google.com/uc?export=view&id=1xmtjoIVAbDEOwOETSrcT_jwCbxwMn-2E",
       cookingTime:  { value: 60, unit: 'minutos'},
       difficult:    "Intermedio",
       macros:       {
