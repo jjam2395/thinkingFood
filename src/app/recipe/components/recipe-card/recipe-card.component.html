@@ -1,5 +1,5 @@
-<div  [routerLink]="[ '/plan/receta/', recipe.id ]"  class="card cursor-pointer title animate__animated animate__fadeIn " style="width: 100%">
-    <img [src]="recipe.imgRoute" class="card-img-top cursor-pointer" [alt]="'foto de '+recipe.name">
+<div  [routerLink]="[ '/plan/receta/', recipe.id ]"  [class]="extendedVersion? 'card title animate__animated animate__fadeIn' : 'cursor-pointer card title animate__animated animate__fadeIn' " style="width: 100%">
+    <img [src]="recipe.imgRoute" class="card-img-top" [alt]="'foto de '+recipe.name">
     <div class="card-body">
       {{ recipe.typemeal | titlecase}}
       <h5 class="card-title text-primary">{{recipe.name | titlecase }}</h5>
