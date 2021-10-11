@@ -1,22 +1,65 @@
 <header>
-    <nav class="shadow-sm">
-        <input type="checkbox" id="ckbox">
-        <label for="ckbox" class="drawer">
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </label>
-        
+    <nav class="navbar navbar-light bg-light fixed-top shadow-sm navbar-expand-lg ">
+        <div class="container-fluid">
 
-        <ul class="menu-box">
-            <li><a *ngIf="path!='/'" (click)="backClicked()" class="fa fa-back"> Atras</a></li>
-            <li><a routerLink="/" class="fa fa-home"> Home</a></li>
-            <li><a routerLink="/quiz"  class="fa fa-calendar"> Plan Semanal</a></li>
-            <!--
-            <li><a href="#" class="fa fa-pencil"> Instrucciones</a></li>
-            <li><a href="#" class="fa fa-envelope-open"> Sugerencias</a></li>
-            <li><a href="#" class="fa fa-cog"> Configuracion</a></li>
-            <li><a href="#" class="fa fa-user"> Cerrar Sesion</a></li>
-            -->
-        </ul>
-        <img  routerLink="/" src="assets/images/Logo-2.png">
-    </nav>
+            <ng-container   *ngIf="path=='/plan/receta/'; else menuIcon">
+              <button class="navbar-toggler">
+                <i class="fa fa-arrow-left"  (click)="backClicked()"></i>
+              </button>
+              
+            </ng-container>
+            <ng-template #menuIcon>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </ng-template>
+
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <img src="assets/images/Logo-2.png">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+
+                <ng-container *ngIf="path=='/plan/receta/'; else menuTemplate">
+                  <li class="nav-item" >
+                    <a
+                    (click)="backClicked()"
+                    data-bs-dismiss="offcanvas"
+                    class="nav-link cursor-pointer"> <i class="fa fa-arrow-left"></i>
+                    Atras
+                    </a>
+                </li>
+
+                </ng-container>
+                <ng-template #menuTemplate>
+                  <li class="nav-item" >
+                    <a
+                    routerLinkActive="active"
+                    [routerLinkActiveOptions]="{ exact: true }"
+                    routerLink="/home" 
+                    data-bs-dismiss="offcanvas"
+                    class="nav-link"> 
+                    Home
+                    </a>
+                </li>
+                <li class="nav-item" >
+                    <a routerLink="/quiz"
+                    routerLinkActive="active"
+                    data-bs-dismiss="offcanvas"
+                       class="nav-link" > 
+                       Plan Semanal
+                    </a>
+                </li>
+                </ng-template>
+                
+                
+              </ul>
+            </div>
+          </div>
+          <a class="navbar-brand" routerLink="/home"><img src="assets/images/Logo-2.png"></a>
+        </div>
+      </nav>
 </header>

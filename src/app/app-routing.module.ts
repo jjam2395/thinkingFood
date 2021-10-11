@@ -1,16 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ByPlanComponent } from './recipe/pages/by-plan/by-plan.component';
-import { DetailsComponent } from './recipe/pages/details/details.component';
 import { LandingComponent } from './landing/pages/landing/landing.component';
-import { QuizComponent } from './quiz/pages/quiz/quiz.component';
-import { QuizOneComponent} from './quiz/components/quiz-one/quiz-one.component';
-import { QuizTwoComponent} from './quiz/components/quiz-two/quiz-two.component';
-import { QuizThreeComponent} from './quiz/components/quiz-three/quiz-three.component';
 
 const routes: Routes = [
   {
-      path: '', 
+      path: 'home', 
       component: LandingComponent,
       pathMatch: 'full',
   }, 
@@ -24,12 +18,12 @@ const routes: Routes = [
   },
   {
       path: '**',
-      redirectTo: ''
+      redirectTo: 'home'
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration: "top"})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

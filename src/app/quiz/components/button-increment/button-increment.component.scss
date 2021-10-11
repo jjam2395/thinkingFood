@@ -3,7 +3,6 @@
     min-width: 120px;
     height: 37px;
     border-radius: 15px;
-    border: solid 1px black;
     background-color: #B4B4B4;
     display: flex;
     flex-direction: row;
@@ -17,6 +16,7 @@
     min-width: 45px;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+    background-color: #65C8AC;
     top: -37px;
     left: -15px;
 }
@@ -27,6 +27,7 @@
     min-width: 45px;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+    background-color: #65C8AC;
     top: -37px;
     left: 16px;
 }
@@ -49,13 +50,6 @@ button {
     text-align: center;
 }
 
-.increment:hover {
-    background-color: #65C8AC;
-}
-
-.decrement:hover {
-    background-color: #65C8AC;
-}
 
 @media(min-width:650px) {
 
@@ -66,4 +60,15 @@ button {
     .decrement {
         left: 19px;
     }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }

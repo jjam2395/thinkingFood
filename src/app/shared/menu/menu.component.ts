@@ -13,7 +13,7 @@ export class MenuComponent implements OnInit {
   constructor(private _location: Location, private router: Router) {
 
     router.events.subscribe((val) => {
-      this.path=this.router.url;
+      this.path=this.router.url.substring(0,this.router.url.length-1);
     });
   }
   
