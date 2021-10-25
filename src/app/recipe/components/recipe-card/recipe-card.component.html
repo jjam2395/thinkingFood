@@ -41,11 +41,31 @@
           </p>
         </div>
 
+        <div *ngIf="recipe.originalPortions && recipe.portions" class="d-flex" >
+          <b class="subtitle-text">Porciones</b>
+          <p>
+            <button type="button" class="btn btn-sm text-primary" [disabled]="recipe.portions==1"  (click)="recipe.portions=recipe.portions-1" ><i class="fa fa-minus"></i></button>
+            <span>{{recipe.portions}}</span>
+            <button type="button"  class="btn btn-sm text-primary" (click)="recipe.portions=recipe.portions+1"><i class="fa fa-plus"></i></button>
+          </p>
+        </div>
+
         <div class="pb-3" *ngIf="recipe.supplies">
           <b class="subtitle-text">Lista de ingredientes</b>
           <div class="row">
             <div class="col-xs-6" *ngFor="let supplie of recipe.supplies" >
-              <small class="small-font"><i>{{supplie.quantity.value+" "+supplie.quantity.unit}} </i></small><span>{{supplie.supplie}}</span>
+              
+
+              <ng-container *ngIf="recipe.portions && recipe.originalPortions; else originalPortions">
+                <small class="small-font">
+                  <i>{{(supplie.quantity.value/recipe.originalPortions)*recipe.portions+" "+supplie.quantity.unit}} </i>
+                </small>
+              </ng-container>
+              <ng-template #originalPortions>
+                <i>{{recipe.originalPortions+" "+supplie.quantity.unit}} </i>
+              </ng-template>
+              
+                <span>{{supplie.supplie}}</span>
             </div>
           </div>
         </div>

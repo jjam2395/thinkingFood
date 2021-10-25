@@ -27,7 +27,8 @@ export class RecipeService {
         proteins: { value: 94, unit: 'g'},
         carbs:    { value: 23, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 250, unit: 'gr.'},
@@ -94,7 +95,8 @@ export class RecipeService {
         proteins: { value: 14, unit: 'g'},
         carbs:    { value: 13, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'tz.'},
@@ -166,7 +168,8 @@ export class RecipeService {
         proteins: { value: 12, unit: 'g'},
         carbs:    { value: 0.3, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 8, unit: 'unid.'},
@@ -216,7 +219,8 @@ export class RecipeService {
         proteins: { value: 15, unit: 'g'},
         carbs:    { value: 25, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},
@@ -294,7 +298,8 @@ export class RecipeService {
         proteins: { value: 1, unit: 'g'},
         carbs:    { value: 18, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 0.25, unit: 'unid.'},
@@ -354,7 +359,8 @@ export class RecipeService {
         proteins: { value: 36.2, unit: 'g'},
         carbs:    { value: 3.6, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'tz.'},
@@ -414,7 +420,8 @@ export class RecipeService {
         proteins: { value: 94, unit: 'g'},
         carbs:    { value: 23, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 250, unit: 'gr.'},
@@ -482,7 +489,8 @@ export class RecipeService {
         proteins: { value: 12, unit: 'g'},
         carbs:    { value: 60, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},
@@ -574,7 +582,8 @@ export class RecipeService {
         proteins: { value: 0, unit: 'g'},
         carbs:    { value: 38, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 0.5, unit: 'unid.'},
@@ -618,7 +627,8 @@ export class RecipeService {
         proteins: { value: 31, unit: 'g'},
         carbs:    { value: 57, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},
@@ -687,7 +697,8 @@ export class RecipeService {
         proteins: { value: 6, unit: 'g'},
         carbs:    { value: 13, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'tarro'},
@@ -732,7 +743,8 @@ export class RecipeService {
         proteins: { value: 14, unit: 'g'},
         carbs:    { value: 12, unit: 'g'},
       },
-      portions:  1,
+      originalPortions:  4,
+      portions: 4,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},

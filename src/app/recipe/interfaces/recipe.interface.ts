@@ -10,6 +10,7 @@ export interface Recipe {
     imgRouteDetalle?:string;
     macros?:        Macro;
     supplies?:      Supplie[];
+    originalPortions?:number;
     portions?:      number;        
     typemeal?:      string;
     preparation?:   string[];
