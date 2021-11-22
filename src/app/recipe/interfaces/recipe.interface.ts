@@ -10,7 +10,9 @@ export interface Recipe {
     imgRouteDetalle?:string;
     macros?:        Macro;
     supplies?:      Supplie[];
-    portions?:      number;        
+    originalPortions:number;
+    adultPortions:   number;
+    childPortions:   number;        
     typemeal?:      string;
     preparation?:   string[];
     flowchartRoute?:string;
@@ -30,6 +32,7 @@ export interface Macro {
 }
 
 export interface Supplie{
-    quantity:  unitValue;
     supplie:    string;
+    quantity:  unitValue;
+    alternativeQuantity?: unitValue;
 }

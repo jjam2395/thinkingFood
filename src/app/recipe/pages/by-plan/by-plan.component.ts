@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { Recipe } from '../../interfaces/recipe.interface';
 import { RecipeService } from '../../services/recipe.service';
 
@@ -15,7 +15,10 @@ export class ByPlanComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.recipes=this.recipeServices.getRecipes();
+    this.recipeServices.getRecipes().subscribe( (resp: any ) => {
+      this.recipes=resp;
+      console.log(resp);
+    });
   }
 
   getDayRecipes(day:string):Recipe[] {

@@ -11,21 +11,17 @@ import { RecipeService } from '../../services/recipe.service';
   styleUrls: ['./details.component.scss']
 })
 export class DetailsComponent implements OnInit {
-
-  constructor( private activatedRoute:ActivatedRoute, private recipeService: RecipeService) { }
   recipe!:Recipe;
 
+  constructor( private activatedRoute:ActivatedRoute, private recipeService: RecipeService) { }
   ngOnInit(): void {
-
     this.activatedRoute.params.subscribe( ({id}) =>{
-      this.recipe=this.findRecipeId(id)
+      this.recipeService.getRecipe(id).subscribe( (response:any) => {
+        this.recipe = response;
+      }) 
+
     });
     
   }
 
-  findRecipeId(id:number):Recipe{
-    let result = this.recipeService.getRecipe(id);
-
-    return result[0];
-  }
 }

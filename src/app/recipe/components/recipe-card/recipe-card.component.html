@@ -41,11 +41,48 @@
           </p>
         </div>
 
+        <div class="d-flex flex-column" >
+          
+          <div class="adultPortions">
+            <b class="subtitle-text">Porciones Adulto</b>
+            <p>
+              <button type="button" class="btn btn-sm text-primary" [disabled]="recipe.adultPortions==0"  (click)="recipe.adultPortions=recipe.adultPortions-1" ><i class="fa fa-minus"></i></button>
+              <span>{{recipe.adultPortions}}</span>
+              <button type="button"  class="btn btn-sm text-primary" (click)="recipe.adultPortions=recipe.adultPortions+1"><i class="fa fa-plus"></i></button>
+            </p>
+          </div>
+          
+          <div class="childPortions">
+            <b class="subtitle-text">Porciones Niños</b>
+            <p>
+              <button type="button" class="btn btn-sm text-primary" [disabled]="recipe.childPortions==0"  (click)="recipe.childPortions=recipe.childPortions-1" ><i class="fa fa-minus"></i></button>
+              <span>{{recipe.childPortions}}</span>
+              <button type="button"  class="btn btn-sm text-primary" (click)="recipe.childPortions=recipe.childPortions+1"><i class="fa fa-plus"></i></button>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" (change)="showAlternativeQuantity= !showAlternativeQuantity">
+          <label class="form-check-label" for="flexSwitchCheckDefault">Medida alterna</label>
+        </div>
+
         <div class="pb-3" *ngIf="recipe.supplies">
           <b class="subtitle-text">Lista de ingredientes</b>
           <div class="row">
             <div class="col-xs-6" *ngFor="let supplie of recipe.supplies" >
-              <small class="small-font"><i>{{supplie.quantity.value+" "+supplie.quantity.unit}} </i></small><span>{{supplie.supplie}}</span>
+                <small class="small-font">
+                  <ng-template #originalQuantity>
+                    <i>{{(supplie.quantity.value/recipe.originalPortions)*(recipe.adultPortions+(recipe.childPortions/2))+" "+supplie.quantity.unit}} </i>
+                  </ng-template>
+                      
+                  <ng-container *ngIf="supplie.alternativeQuantity && supplie.alternativeQuantity.value>0 && showAlternativeQuantity;else originalQuantity">
+                    <i >{{(supplie.alternativeQuantity.value/recipe.originalPortions)*(recipe.adultPortions+(recipe.childPortions/2))+" "+supplie.alternativeQuantity.unit}} </i>
+                  </ng-container>
+                </small>
+
+                <span>{{supplie.supplie}}</span>
             </div>
           </div>
         </div>
@@ -61,7 +98,7 @@
           <b class="subtitle-text">¿Primera vez viendo esta receta?</b>
           <div class="row mt-3">
             <iframe class="col" #iframeVideo  
-            allow="accelerometer; autoplay;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            allow="accelerometer;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
            <!-- <iframe src="https://drive.google.com/file/d/1QqAMbqsSoQ7s_uU96jRfxVeRerLUb5ur/preview" width="640" height="480" allow="autoplay"></iframe> -->
             

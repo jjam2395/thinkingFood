@@ -11,18 +11,15 @@ export class RecipeCardComponent implements OnInit, AfterViewInit {
   @Input() recipe!:Recipe;
   @Input() day!:string;
   @Input() extendedVersion!:boolean;
-
-  constructor() { }
+  showAlternativeQuantity:boolean=false;
   @ViewChild('iframeVideo') iframeVideo!: ElementRef;
   @ViewChild('iframeFlowchart') iframeFlowchart!: ElementRef;
-  
-
   ngOnInit(): void {
   
   }
 
   ngAfterViewInit() {
-    if (this.extendedVersion){
+    if (this.extendedVersion && this.iframeVideo){
       this.iframeVideo.nativeElement.setAttribute('src', this.recipe.videoRoute);
       this.iframeFlowchart.nativeElement.setAttribute('src', this.recipe.flowchartRoute);
     }
