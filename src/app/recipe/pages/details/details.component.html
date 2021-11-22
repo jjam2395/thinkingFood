@@ -1,5 +1,9 @@
 <div class="detail-container pt-4">
     <div class="container py-5">
-        <app-recipe-card   [recipe]="recipe" [extendedVersion]="true" *ngIf="this.recipe" ></app-recipe-card>
+        <app-recipe-card   [recipe]="recipe" [extendedVersion]="true" *ngIf="this.recipe;else loading" ></app-recipe-card>
     </div>
 </div>
+
+<ng-template #loading>
+    cargando...
+</ng-template>

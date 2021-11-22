@@ -9,7 +9,8 @@ import { Recipe } from '../interfaces/recipe.interface';
 export class RecipeService {
 
   
-  private apiUrl: string = "https://firebase/recipes/rest/v2/";
+  private apiUrl: string = "https://thinkingfood-platzi-default-rtdb.firebaseio.com";
+  items: any;
   recipes: Recipe[]=[
     {
       id:           0,
@@ -28,10 +29,12 @@ export class RecipeService {
         carbs:    { value: 23, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 250, unit: 'gr.'},
+        alternativeQuantity:  { value: 1.5, unit: 'tazas'},
         supplie: "Avena",
         },
         {
@@ -96,7 +99,8 @@ export class RecipeService {
         carbs:    { value: 13, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'tz.'},
@@ -169,7 +173,8 @@ export class RecipeService {
         carbs:    { value: 0.3, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 8, unit: 'unid.'},
@@ -220,7 +225,8 @@ export class RecipeService {
         carbs:    { value: 25, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},
@@ -299,7 +305,8 @@ export class RecipeService {
         carbs:    { value: 18, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 0.25, unit: 'unid.'},
@@ -360,7 +367,8 @@ export class RecipeService {
         carbs:    { value: 3.6, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'tz.'},
@@ -421,7 +429,8 @@ export class RecipeService {
         carbs:    { value: 23, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 250, unit: 'gr.'},
@@ -490,7 +499,8 @@ export class RecipeService {
         carbs:    { value: 60, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},
@@ -583,7 +593,8 @@ export class RecipeService {
         carbs:    { value: 38, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 0.5, unit: 'unid.'},
@@ -628,7 +639,8 @@ export class RecipeService {
         carbs:    { value: 57, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},
@@ -698,10 +710,13 @@ export class RecipeService {
         carbs:    { value: 13, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
-        quantity:  { value: 1, unit: 'tarro'},
+        quantity:  {
+                     value: 1, unit: 'tarro'
+                   },
         supplie: "Leche vegetal",
         },
         {
@@ -744,7 +759,8 @@ export class RecipeService {
         carbs:    { value: 12, unit: 'g'},
       },
       originalPortions:  4,
-      portions: 4,
+      adultPortions: 4,
+      childPortions: 0,
       supplies:  [
         {
         quantity:  { value: 1, unit: 'unid.'},
@@ -799,17 +815,17 @@ export class RecipeService {
     }
   ];
   
-  constructor(private http: HttpClient) { 
-    
+  constructor(private http: HttpClient) {
+
   }
 
-  getRecipes(): Recipe[]{
-    let results = this.recipes;
+  getRecipes(): any{
+    let results = this.http.get(`${this.apiUrl}/recipes.json`);
     return results;
   }
 
-  getRecipe(id:number): Recipe[]{
-    let results= this.recipes.filter(item=> item.id==id);
+  getRecipe(id:number): any{
+    let results= this.http.get(`${this.apiUrl}/recipes/${id}.json`);
     return results;
   }
 
