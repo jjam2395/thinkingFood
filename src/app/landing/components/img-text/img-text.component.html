@@ -1,0 +1,11 @@
+
+<div class="item">
+    <picture class="item__image">
+        <source class="item__image-desktop" [srcset]=mobileImage media="(min-width: 600px)">
+        <img class="item__image-mobile" [src]=mobileImage alt="image">
+    </picture>
+    <div class="item__containerText">
+        <h3 class="item__title">{{title}}</h3>
+        <p class="item__text">{{text}}</p>
+    </div>    
+</div>

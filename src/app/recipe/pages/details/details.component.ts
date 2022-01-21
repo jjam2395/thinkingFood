@@ -22,10 +22,11 @@ export class DetailsComponent implements OnInit {
     });
   }
 
+  /*
   saveRecipe(recipe:Recipe){
     this.recipeService.saveRecipe(recipe).then(() => {
        console.log('recipe added: ',recipe);
     })
-  }
+  }*/
 
 }

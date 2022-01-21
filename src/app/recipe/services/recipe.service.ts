@@ -2,8 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Recipe } from '../interfaces/recipe.interface';
+import { collectionSnapshots, Firestore } from '@angular/fire/firestore';
+import { collection } from '@angular/fire/firestore';
 
-import { AngularFirestore} from '@Angular/fire/compat/firestore';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class RecipeService {
   items: any;
   recipes: Recipe [] = [];
   
-  constructor(private http: HttpClient, private firebase:AngularFirestore) {
+  constructor(private http: HttpClient, private firestore: Firestore) {
 
   }
 
@@ -39,12 +40,19 @@ export class RecipeService {
     return this.http.get<Recipe[]>(url)
   }
 
-  
+  /*
   saveRecipe(recipe:Recipe): Promise<any>{
     return this.firebase.collection('recipes').add(recipe);
-  }
+  }*/
 
   getRecipesFS(): any{
-    return this.firebase.collection('recipes').valueChanges();
+    let recipes = collection(this.firestore, 'recipes');
+    
+    collectionSnapshots(recipes).subscribe( data => {
+      console.log(data)
+      return data
+    });
+
+    //return this.firebase.collection('recipes').valueChanges();
   }
 }
