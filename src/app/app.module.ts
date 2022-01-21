@@ -11,6 +11,9 @@ import { LandingModule } from './landing/landing.module';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -25,6 +28,8 @@ import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
     QuizRoutingModule,
     SharedModule,
     LandingModule,
+    AngularFireModule.initializeApp(environment.firebase)
+    /*
     provideFirebaseApp(() => initializeApp({
       apiKey: "AIzaSyCGQ0tYppWFJkuSxBhOpkH0xVDmX245Vdc",
       authDomain: "thinkingfood-platzi.firebaseapp.com",
@@ -37,6 +42,8 @@ import { getAnalytics, provideAnalytics } from '@angular/fire/analytics';
     })),
     provideAnalytics(() => getAnalytics()),
     provideFirestore(()=> getFirestore()),
+    provideAuth(() => getAuth()),
+    */
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,9 +19,13 @@ export class DetailsComponent implements OnInit {
       this.recipeService.getRecipe(id).subscribe( (response:any) => {
         this.recipe = response;
       }) 
-
     });
-    
+  }
+
+  saveRecipe(recipe:Recipe){
+    this.recipeService.saveRecipe(recipe).then(() => {
+       console.log('recipe added: ',recipe);
+    })
   }
 
 }

@@ -15,15 +15,17 @@ export class ByPlanComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.recipeServices.getRecipes().subscribe( (resp: any ) => {
+    this.recipeServices.getRecipesFS().subscribe ((resp: any) => {
       this.recipes=resp;
-      console.log(resp);
+      console.log('fs', resp);
     });
   }
 
   getDayRecipes(day:string):Recipe[] {
-    let recipes:any = this.recipes.filter(recipe => recipe.day==day);
+    let recipes:any = this.recipes.filter(recipe => recipe.day?.includes(day));
     return recipes;
     }
+
+
   
 }
